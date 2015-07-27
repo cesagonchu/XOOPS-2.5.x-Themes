@@ -1,0 +1,22 @@
+<div id="xo-globalnav" >
+
+    <ul>
+<{php}>
+    include_once XOOPS_ROOT_PATH.'/modules/system/blocks/system_blocks.php';
+    $modules = b_system_main_show();
+    $this->assign('defModules', $modules);
+<{/php}>
+<li class="sitename"><a href="<{xoAppUrl}>"><img src="<{xoImgUrl img/xoops.png}>" /></a></li>
+<li><a href="<{$xoops_url}>"><{$defModules.lang_home}></a></li>
+<{foreach item=module from=$defModules.modules}>
+<li><a href="<{$xoops_url}>/modules/<{$module.directory}>/" <{if $xoops_dirname== $module.directory}> class="active"<{/if}> title="<{$module.name}>"><{$module.name}></a>
+<{/foreach}>
+
+</ul>
+</div>
+
+
+
+
+
+

@@ -1,0 +1,333 @@
+@import url(templatemo_style.css);
+html, body {	
+	margin: 0;
+	padding: 0;
+	line-height: 1.5em;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 11px;
+	color: #dbdada;
+	background: #333333;
+	}
+
+table {width: 100%;}
+table td {padding: 0; border-width: 0; vertical-align: top; }
+
+a {color: #5B93EF; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: #fff;}
+
+h1 {font-size:1.4em;}
+h2 {font-size:1.3em;}
+h3 {font-size:1.2em;}
+h4 {font-size:1.1em;}
+h5 {font-size:1em;}
+ul { margin: 2px; padding: 2px; list-style: disc inside; text-align: left;}
+ol { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; color: #2A75C5;}
+
+input.formButton {}
+
+.item {border: 1px solid #666;}
+.itemHead {padding: 3px; background-color: #000; color: #fff;}
+.itemInfo {text-align: right; padding: 3px; background-color: #efefef}
+.itemTitle a {font-size: 1.2em; font-weight: bold; font-variant: small-caps; color: #fff; background-color: transparent;}
+.itemPoster {font-size: .9em; font-style:italic;}
+.itemPostDate {font-size: .9em; font-style:italic;}
+.itemStats {font-size: .9em; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 1.3em; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-color: #000;}
+.itemAdminLink {font-size: .9em;}
+.itemPermaLink {font-size: .9em;}
+
+#header {
+    margin :                0;
+    padding :               0;
+    height:                 80px;
+    background:transparent;
+    padding:                2px;
+    color:                  #fff;
+    
+}
+#headerbanner {width: 100%; vertical-align: middle; text-align:center;}
+/* fix for banner */
+#xo-bannerfix {
+    /*position:               absolute;*/
+	position: relative;
+	float: right;
+    top:                    25px;
+    right:                  25px;
+    width:                  480px;
+    height:                 72px;
+    background:             url(bg-ad-top.png) no-repeat;
+	padding:				6px;
+	z-index:99;
+}
+
+.XD-block {padding: 0 5px 0 0;}
+
+#xo-bannerfix object, #xo-bannerfix img {display: block;}
+/* end fix for banner */
+#headerlogo img {padding: 0;}
+#headerbar {background: transparent;}
+
+#leftcolumn {width: 220px; font-size:1em;}
+#leftcolumn th {background-color: #2A75C5; color: #fff; vertical-align: middle;}
+#leftcolumn .blockTitle {   
+	 background: url(images/templatemo_header_icon.jpg) no-repeat scroll right center #161616;
+    clear: both;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 27px;
+    margin-bottom: 20px;
+    padding: 8px 0 0 10px;}
+#leftcolumn .blockContent {padding: 3px; line-height: 1.2em;margin-bottom: 10px;}
+
+
+#centercolumn {font-size: 1em; padding: 0 0 0 1px;}
+#centercolumn th {background-color: #000; color: #fff; vertical-align: middle;}
+
+#centerCcolumn, #bottomCcolumn {padding: 0 3px 1px 3px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {
+	background: url(images/templatemo_header_icon.jpg) no-repeat scroll right center #161616;
+    clear: both;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 27px;
+    margin-bottom: 20px;
+    padding: 8px 0 0 10px;
+    }
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {padding: 3px; margin-right: 0;  margin-left: 0; margin-bottom: 10px; line-height: 1.2em;}
+
+#centerLcolumn, #bottomLcolumn, #centerRcolumn, #bottomRcolumn {
+        width: 50%; padding: 0 3px 0 0;
+}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle, #centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {
+            background: url("images/templatemo_header_icon.jpg") no-repeat scroll right center #161616;
+    clear: both;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 27px;
+    margin-bottom: 20px;
+    padding: 8px 0 0 10px;
+}
+#centerLcolumn .blockContent, #centerRcolumn .blockContent, #bottomLcolumn .blockContent, #bottomRcolumn .blockContent {
+        padding: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 10px; line-height: 1.2em;
+}
+
+#content {text-align: left; padding: 8px;}
+
+#rightcolumn {width: 220px; font-size:1em;}
+#rightcolumn th {background-color: #2A75C5; color: #fff; vertical-align: middle;}
+#rightcolumn .blockTitle {
+	background: url(images/templatemo_header_icon.jpg) no-repeat scroll right center #161616;
+    clear: both;
+    color: #FFFFFF;
+    font-size: 20px;
+    height: 27px;
+    margin-bottom: 20px;
+    padding: 8px 0 0 10px;
+	}
+#rightcolumn .blockContent {padding: 3px; line-height: 1.2em;margin-bottom: 10px;}
+
+#footerbar { background:#000; font-size:.9em; height : 23px; text-align:center;}
+
+
+#mainmenu a {display: block; margin: 0; padding: 4px;}
+#mainmenu a:hover {background-color: #fff;}
+#mainmenu a.menuTop {padding-left: 3px;color: #5B93EF; }
+#mainmenu a.menuMain {padding-left: 3px;color: #5B93EF; }
+#mainmenu a.menuSub {
+	font-style: italic;
+    padding-left: 13px;
+    color: #5B93EF;
+    }
+#mainmenu a.maincurrent {background-color:transparent; color:#ff9900;}
+
+#usermenu { font-size : .9em;}
+#usermenu a { display: block; margin: 0; padding: 2px; font-weight : normal;color: #5B93EF;}
+#usermenu a:hover {background-color: #fff;}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color: #fcc;}
+
+
+caption {font-weight: bold;}
+th, thead {background-color: #333333; padding : 2px; color: #fff; vertical-align : middle;}
+.outer {border: 1px solid #c0c0c0;}
+.head {background-color: #545151; padding: 5px; font-weight: bold;}
+.even {background-color: #3d3c3c; padding: 5px;}
+.odd {background-color: #656161; padding: 5px;}
+.foot {background-color: #545151; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #3d3c3c; padding: 5px;}
+tr.odd td {background-color: #656161; padding: 5px;}
+tr.foot td {background-color: #545151; padding: 5px; color:inherit; font-weight: bold;}
+
+.errorMsg,.confirmMsg, .resultMsg  { padding: .8em; text-align:center; margin-bottom: 1em; border: 2px solid #ddd;}
+.errorMsg  { background-color: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
+.confirmMsg { background-color: #FFF6BF; color: #817134; border-color: #FFD324; }
+.resultMsg { background-color: #E6EFC2; color: #529214; border-color: #C6D880; }
+.errorMsg a { background-color: transparent; color: #D12F19; }
+.confirmMsg a { background-color: transparent; color: #817134; }
+.successMsg a { background-color: transparent; color: #529214; }
+
+.xoopsCode { background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; height: 200px; overflow: auto; font-size:.9em;color: #000;}
+.xoopsQuote { background: #fff; border-left: 4px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; font-size:.9em;color: #000;}
+blockquote {font-style : italic; line-height:1.4em;}
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: .9em; color: #2A75C5; font-weight:bold; border: 1px solid #c0c0c0; background-color: #fff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2A75C5; font-weight:bold; font-size: .9em;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: .9em;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName a {color: #fff;}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: .8em;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+/*============== Styles for system_siteclosed.html  (override system module) =================*/
+#xo-siteclose {
+    width:                  400px;
+    height:				    300px;
+    margin:                 0 auto;
+    background-image:       url(images/box.png);
+    background-repeat: no-repeat;
+    padding:                95px 30px 30px;
+    color:                  #fff;
+    font-size:              1.2em;
+    font-weight:            bold;
+    text-align:             center;
+   
+}
+#xo-userbar_siteclosed {
+    display:                block;
+    background:             transparent;
+    padding-top:            8px;
+    padding-right:          1em;
+    color:                  #fff;
+    font-size :             40px;
+    text-align :            center;
+}
+
+#xo-userbar_siteclosed p{
+	font-size: 25px;
+}
+
+#xo-siteclose form{
+    
+    margin-top: -46px;
+}
+
+#xo-siteclose input{
+	    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    display:block;
+    margin-bottom:36px;
+    margin-left: 32px;
+    width: 260px;
+    color: #fff;
+    padding-top: 5px;
+}
+
+#xo-siteclose p{
+	text-align: left;
+}
+
+#xo-siteclose .slogan p{
+	padding-top: 40px;
+}
+
+#xo-siteclose .xo-siteclose-submit input{
+	background-image: url(images/Go.png);
+	background-repeat:no-repeat;
+	width: 80px;
+	height: 25px;
+	border: 0;
+	color: transparent;
+	cursor: pointer;
+}
+
+#xo-userbar_siteclosed input, #xo-userbar_siteclosed button {
+    width:                  100px;
+    background-color:       transparent;
+    color:                  #fff;
+    font-size :             .9em;
+    margin:                 2px;
+    display: block;
+}
+#xo-userbar_siteclosed input:hover {}
+
+/*============== Styles for system_redirect.html (override system module) =================*/
+#xo-redirect {
+    width:                  780px;
+    margin:                 50px auto;
+    padding:                1em;
+    font-weight:            bold;
+    text-align:             center;
+}
+#xo-redirect .notreload {
+    height:                 28px;
+    background-color:       inherit;
+    padding-top:            2px;
+    color:                  #000;
+}
+#xo-redirect .notreload a {
+    background-color:       inherit;
+    color:                  #ff0000;
+    font-weight:            bold;
+    text-decoration:        none;
+}
+#xo-redirect .message {
+    min-height:             60px;
+    background-color:       #f3f3f3;
+    padding:                1em;
+    color:                  #333;
+    font-size:              1.2em;
+    text-align:             center;
+    border:                 1px solid #666;
+}
+#xo-redirect .message img{
+    padding:                1em;
+}
+/*============== Styles for pagenav =================*/
+#xo-pagenav {
+    margin:                 7px 0;
+    text-align:             center;
+    font-size:              1.05em;
+}
+#xo-pagenav a {
+    text-decoration:        none;
+}
+#xo-pagenav a:hover {
+    color:                  #fff;
+    background-color:       #2A75C5;
+    border:                 1px solid #fff;
+}
+.xo-pagact {
+    margin:                 0;
+    padding:                .2em .5em;
+    color:                  #fff;
+    background-color:       #000;
+    border:                 0px solid #fff;
+}
+.xo-counterpage, .xo-pagarrow {
+    margin:                 0;
+    padding:                .2em .5em;
+    color:                  #000;
+    background-color:       #fff;
+    border:                 1px solid #000;
+}
+.xo-counterpage:hover {}
+.xo-pagarrow {
+    letter-spacing:         0.2em;
+}
+/*======= Tinymce background textarea ========*/
+body.mceContentBody {
+    margin:                 0;
+    padding:                0;
+    background-color:       #fff;
+    background-image:       none;
+    color:                  #000;
+}

@@ -1,0 +1,79 @@
+<!-- use with smarty plugin function.block.php (http://www.xuups.com/modules/publisher/item.php?itemid=10) -->
+<{if !$xoops_isuser}> <!-- anonym mode -->
+	<div id="xd-blockfooter" class="<{$xoops_dirname}>">
+
+
+
+		<div id="xd-block-<{$block.module}>-68" class="xd-block">
+			<div class="xd-blocktitle">
+			<{block id=68 display="title"}>
+				<{if $xoops_isadmin}>
+					<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="Edit this Block" >
+<img src="<{$xoops_imageurl}>icons/block-edit.png" alt="Edit this Block"></a>
+				<{/if}>
+			</div>
+			<div class="xd-blockcontent"><{block id=68}></div>
+		</div>
+
+		<div id="xd-block-<{$block.module}>-69" class="xd-block">
+			<div class="xd-blocktitle">
+			<{block id=69 display="title"}>
+				<{if $xoops_isadmin}>
+					<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="Edit this Block" >
+<img src="<{$xoops_imageurl}>icons/block-edit.png" alt="Edit this Block"></a>
+				<{/if}>
+			</div>
+			<div class="xd-blockcontent"><{block id=69}></div>
+		</div>
+
+		<div id="xd-block-<{$block.module}>-70" class="xd-block">
+			<div class="xd-blocktitle">
+			<{block id=70 display="title"}>
+				<{if $xoops_isadmin}>
+					<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="Edit this Block" >
+<img src="<{$xoops_imageurl}>icons/block-edit.png" alt="Edit this Block"></a>
+				<{/if}>
+			</div>
+			<div class="xd-blockcontent"><{block id=70}></div>
+		</div>
+		
+	</div>
+<{else}> <!-- user mode -->
+	<div id="xd-blockfooter">
+
+		<div id="xd-block-<{$block.module}>-68" class="xd-block">
+			<div class="xd-blocktitle">
+			<{block id=68 display="title"}>
+				<{if $xoops_isadmin}>
+					<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="Edit this Block" >
+<img src="<{$xoops_imageurl}>icons/block-edit.png" alt="Edit this Block"></a>
+				<{/if}>
+			</div>
+			<div class="xd-blockcontent"><{block id=68}></div>
+		</div>
+
+		<div id="xd-block-<{$block.module}>-69" class="xd-block">
+			<div class="xd-blocktitle">
+			<{block id=69 display="title"}>
+				<{if $xoops_isadmin}>
+					<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="Edit this Block" >
+<img src="<{$xoops_imageurl}>icons/block-edit.png" alt="Edit this Block"></a>
+				<{/if}>
+			</div>
+			<div class="xd-blockcontent"><{block id=69}></div>
+		</div>
+
+		<div id="xd-block-<{$block.module}>-70" class="xd-block">
+			<div class="xd-blocktitle">
+			<{block id=70 display="title"}>
+				<{if $xoops_isadmin}>
+					<a href="<{xoAppUrl /modules/system/admin.php?fct=blocksadmin&op=edit&bid=}><{$block.id}>" title="Edit this Block" >
+<img src="<{$xoops_imageurl}>icons/block-edit.png" alt="Edit this Block"></a>
+				<{/if}>
+			</div>
+			<div class="xd-blockcontent"><{block id=70}></div>
+		</div>
+		
+	</div>
+<{/if}>
+<div id="footerbar"></div>

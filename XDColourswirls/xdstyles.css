@@ -1,0 +1,307 @@
+/*
+Design by Metamorphosis Design
+http://www.metamorphozis.com
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+
+
+#main{
+    margin: 0 auto;
+    width: 836px;
+}
+
+#logo{
+	float: left;
+    font-size: 20px;
+        font-style: italic;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: lowercase;
+    text-align: left;
+    color: #fff;
+}
+
+#logo span{
+	color: #fff;
+	font-style: normal;
+    font-weight: normal;
+    text-decoration: none;
+    text-transform: none;
+    font-size: 14px;
+}
+
+#bg_top{
+    background: url(images/bg_top.jpg);
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 1260px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+#bg_bot{
+    background: url(images/bg_bot.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    
+}
+
+#header{
+    width: 836px;
+    height: 134px;
+    margin: 0 auto;
+}
+
+#banner{
+    text-align: right;
+    padding-top: 20px;
+    width: 836px;
+}
+
+#banner a {
+    text-decoration: none;
+    text-transform: lowercase;
+    font-style: italic;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+
+#banner H2 a{
+    font-size: 11px;
+}
+
+#buttons{
+    height: 47px;
+    width: 639px;
+    float: right;
+}
+
+#buttons ul {
+    padding-left: 0px;
+    float: right;
+}
+
+#buttons li {
+    display: inline;
+    
+}
+
+#buttons a {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    color: #0b2078;
+    display: block;
+    float: left;
+    width: 103px;
+    height: 37px;
+    padding-top: 15px;
+    background: url(images/menu.png);
+    background-repeat:no-repeat;
+    background-position:center top;
+    margin-left: 1px;
+}
+
+#buttons a:hover, #buttons .active {
+    height: 34px;
+    background: url(images/menu_h.png);
+    background-repeat:no-repeat;
+    background-position:center top;
+}
+
+.main_top{
+    background: url(images/main_top.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 14px;
+}
+
+#content{
+   background: url(images/main_bg.png);
+   background-repeat: repeat;
+}
+
+.col{
+    background: url(images/col_bg.png);
+    background-repeat: repeat-y;
+    background-position: center;
+}
+
+.col_bot{
+    background: url(images/col_bot.png);
+    background-repeat: repeat-y;
+    background-position: center;
+    height: 10px;
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.col1,.col2,.col3,.col4{
+    width: 191px;
+    padding-left: 11px;
+    padding-right: 7px;
+    float: left;
+}
+
+.col h1{
+    color: #031977;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.col1p{
+    color: #b49401;
+    padding-bottom: 10px;
+}
+
+.col2p{
+    color: #de7c09;
+    padding-bottom: 10px;
+}
+
+.col3p{
+    color: #0d748a;
+    padding-bottom: 10px;
+}
+
+.col4p{
+    color: #0e9a40;
+    padding-bottom: 10px;
+}
+
+.read {
+      text-align: right;
+      padding-right: 10px;
+}
+
+.read a{
+    color: #0056cc;
+
+    text-decoration: none;
+    border-bottom: 1px dotted #0056cc;
+}
+
+#left{
+    width: 598px;
+    padding-left: 12px;
+}
+
+#left p{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.text{
+    padding-bottom: 10px;
+}
+
+
+#left H1{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight:normal;
+    color: #031977;
+    height: 20px;
+    padding-top: 4px;
+    width:100%;
+    background: url(images/title_left.png);
+    background-repeat: repeat-x;
+    background-position:bottom left;
+    margin-bottom: 10px;
+}
+
+.col_left{
+    float: left;
+    width: 350px;
+    padding-top: 10px;
+}
+
+.col_right{
+    float: right;
+    width: 350px;
+    padding-top: 10px;
+}
+
+#right{
+    width: 206px;
+    float:right;
+    color: #bababa;
+    padding-right: 4px;
+}
+
+#right h2 {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-weight:normal;
+    color: #031977;
+    text-align:center;
+    height: 27px;
+    padding-top: 10px;
+    background: url(images/title_right.png);
+    background-repeat:no-repeat;
+    background-position:top left;
+}
+
+#right ul{
+    list-style: none;
+    padding-left:5px;
+    padding-right:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#right li{
+    background: url(images/ls.png);
+    background-repeat: no-repeat;
+    background-position: left 5px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+}
+
+#right a{
+    text-decoration: none;
+    color: #000000;
+    font-weight:normal;
+}
+
+#right a:hover {
+    text-decoration: none;
+}
+
+#footer{
+    height: 50px;
+    margin: 0 auto;
+    font-size: 10px;
+    color: #ffffff;
+    padding-top: 30px;
+    text-align: center;
+    clear:both;
+    padding-bottom: 5px;
+    background: url(images/main_bot.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.mainbot{
+   
+   clear: both;
+}
+
+#footer a{
+    color: #ffffff;
+    font-size: 10px;
+    text-decoration: none;
+}
+.padding{
+    padding: 10px;
+    color:#FF0000;
+    font-weight: bold;
+}

@@ -1,0 +1,160 @@
+/* ===== columns list ===== */
+.xo-canvas-column ul {
+    margin:                 0;
+    padding:                .5em;
+    list-style-type:        none;
+}
+
+.xo-canvas-column ul ul {
+    padding-top:            0;
+    padding-bottom:         0;
+    padding-left:           1em;
+}
+
+/* ===== table cells in columns ===== */
+.xo-canvas-column .outer, .xo-canvas-column .outer td {
+    background-color:       transparent;
+    color:                  inherit;
+    border:                 0 none transparent !important;
+}
+
+.xo-canvas-column .outer, .xo-canvas-column .outer img {
+    margin:                 0;
+    padding:                0;
+    border:                 0 !important;
+}
+
+/* ===== left columns ===== */
+#xo-canvas-leftcolumn .xo-block {
+    width:                  280px; 
+}
+
+#xo-canvas-leftcolumn .xo-blocktitle {
+    background: url(../img/sidebar.png) repeat-y scroll 0 0 transparent;
+    
+    color: #FBE724;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 28px;
+    padding-left: 20px;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent {
+    min-height:             110px;
+    background: url(../img/sidebar.png) repeat-y scroll 0 0 transparent;
+    padding:                1em;
+    color:                  #fff;
+}
+
+* html #xo-canvas-leftcolumn .xo-blockcontent {
+    height:                 110px;
+
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent a {
+    background-color:       inherit;
+    color:                  #ccc;
+    text-decoration:         none;
+}
+
+#xo-canvas-leftcolumn .xo-blockcontent a:hover {
+    background-color:       inherit;
+    color:                  #fff;
+    text-decoration:        none;
+}
+
+#xo-canvas-leftcolumn img {
+    margin:                 3px 3px 0 7px;
+    padding:                3px;
+    border:                 0px solid #999;
+}
+
+#xo-canvas-leftcolumn img:hover {
+    border:                 0;
+}
+
+/* ===== right column ===== */
+
+#sidebar_top {
+    background: url(../img/sidebar_top.png) no-repeat scroll 0 0 transparent;
+    height: 10px;
+    margin-top: -10px;
+    width: 280px;
+}
+
+#sidebar_bottom {
+    height: 10px;
+    width: 280px;
+	background: url(../img/sidebar_bottom.png) no-repeat scroll 0 0 transparent;
+}
+
+#xo-canvas-rightcolumn .xo-block { width: 280px; } /* add by kris */
+#xo-canvas-rightcolumn a {
+    background-color:       inherit;
+    color:                  #59709C;
+    text-decoration:        none;
+}
+
+#xo-canvas-rightcolumn a:hover {
+    background-color:       inherit;
+    color:                  #555;
+    text-decoration:        underline;
+}
+
+#xo-canvas-rightcolumn .xo-blocktitle {
+     background: url(../img/sidebar.png) repeat-y scroll 0 0 transparent;
+        color: #FBE724;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 28px;
+    padding-left: 20px;}
+
+#xo-canvas-rightcolumn .xo-blockcontent {
+    padding:                1.5em;
+     background: url(../img/sidebar.png) repeat-y scroll 0 0 transparent;
+     color: #fff;
+}
+
+
+/* ======= center column ===========*/
+.xo-block ul {
+    margin:                 0;
+    padding:                0;
+    list-style-type:        none;
+}
+
+#xo-page .xo-blockszone .xo-blocktitle {
+  color: #FBE724;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 28px;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent {
+    background-color:       inherit;
+    padding:                .5em;
+    color:                  #ccc;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent img {
+    margin:                 3px 3px 0 7px;
+    padding:                3px;
+    border:                 0;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent img:hover {
+    border:                 0;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent a {
+    background-color:       inherit;
+    color:                  #1251c6;
+    text-decoration:        none;
+}
+
+#xo-page .xo-blockszone .xo-blockcontent a:hover {
+    background-color:       inherit;
+    color:                  #000;
+}

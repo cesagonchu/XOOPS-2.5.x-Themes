@@ -1,0 +1,51 @@
+        <link rel="stylesheet" type="text/css" href="<{xoImgUrl css/slider.css}>">
+    <!--[if IE 7]> <link rel="stylesheet" type="text/css" href="css/styleIE7.css" /> <![endif]-->
+        <!--[if IE 6]>
+        <script src="js/DD_belatedPNG_0.0.8a.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/styleIE6.css">
+        <script>
+          DD_belatedPNG.fix('*')
+          /* string argument can be any CSS selector */
+          /* .png_bg example is unnecessary */
+          /* change it to what suits you! */
+        </script>
+        <![endif]-->
+    
+    <script src="<{xoImgUrl js/sifr.js}>" type="text/javascript"></script>
+    <script src="<{xoImgUrl js/sifr-addons.js}>" type="text/javascript"></script>
+    <script src="<{xoImgUrl js/jquery.js}>" type="text/javascript"></script>
+    <script src="<{xoImgUrl js/jquery.cycle.all.min.js}>" type="text/javascript"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	jQuery('.slideshow').cycle({ 
+    fx:    'scrollDown', 
+    sync:   0, 
+    delay: -3000
+});
+});
+</script>
+
+
+
+<div class="slider-holder">
+              <div class="slider">
+                  <div class="featured-work margin-separator">
+                      <h1>WE BUILD WEBSITES</h1>
+                      <h2 class="h2-main-page">AND WE BUILD THEM WELL</h2>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                      <a href="our-work.html" class="green-button margin-separator">View our portofolio</a>
+                      <a href="services.html" class="blue-button margin-separator">View our services</a>
+                  </div>
+                  
+                  <div class="slideshow-back">
+                      <ul class="slideshow">
+                              <li><a href="#"><img src="<{xoImgUrl images/slideshow-image1.jpg}>" width="376" height="302" alt="featured-work"></a></li>
+                              <li><a href="#"><img src="<{xoImgUrl images/slideshow-image2.jpg}>" width="376" height="302" alt="featured-work"></a></li>
+                              <li><a href="#"><img src="<{xoImgUrl images/slideshow-image3.jpg}>" width="376" height="302" alt="featured-work"></a></li>
+                          </ul>
+                  </div>
+              </div>
+          </div>
+          
+          

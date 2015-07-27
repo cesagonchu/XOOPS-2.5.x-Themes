@@ -1,0 +1,319 @@
+@import url(jquery.lightbox-0.5.css);
+@import url(nivo-slider.css);
+@import url(templatemo_style.css);
+
+html, body {	
+	margin: 0;
+	padding: 0;
+	color: #a58d6e;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.7em; 
+	background-color: #746e67;
+	background-image:url(images/templatemo_body.jpg);
+	background-repeat: repeat
+	}
+
+table {width: 100%;}
+table td {padding: 0; border-width: 0; vertical-align: top; }
+
+a {color: #666; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: #ff6600;}
+
+.xo-block {padding: 0 5px 0 0;}
+
+h1, h2, h3, h4, h5, h6 { color: #e47100; font-weight: normal; }
+h1 { font-size: 28px; margin: 0 0 20px 0; padding: 5px 0 }
+h2 { display: block; height: 40px; font-size: 25px; margin: 0; padding: 15px 0 20px 10px; background: url(images/templatemo_h2.png) no-repeat top left  }
+h3 { font-size: 22px; margin: 0 0 15px; padding: 0; }
+h4 { font-size: 18px; margin: 0 0 15px; padding: 0; }
+h5 { font-size: 16px; margin: 0 0 10px; padding: 0;  }
+h6 { font-size: 14px; margin: 0 0 5px; padding: 0; }
+ul { margin: 2px; padding: 2px; list-style: disc inside; text-align: left;}
+ol { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; color: #2A75C5;}
+
+input.formButton {}
+
+.item {border: 0px solid #666;}
+.itemHead {padding: 3px; background-color: #766348; color: #fff;}
+.itemInfo {text-align: right; padding: 3px; background-color: #efefef}
+.itemTitle a {font-size: 1.2em; font-weight: bold; font-variant: small-caps; color: #fff; background-color: transparent;}
+.itemPoster {font-size: .9em; font-style:italic;}
+.itemPostDate {font-size: .9em; font-style:italic;}
+.itemStats {font-size: .9em; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 1.3em; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-color: #efefef;}
+.itemAdminLink {font-size: .9em;}
+.itemPermaLink {font-size: .9em;}
+
+#header {
+    margin :                0;
+    padding :               0;
+    height:                 80px;
+    padding:                2px;
+    color:                  #fff;
+    
+}
+#headerbanner {width: 100%; vertical-align: middle; text-align:center;}
+/* fix for banner */
+#xo-bannerfix {
+    /*position:               absolute;*/
+	position: relative;
+	float: right;
+    top:                    5px;
+    right:                  25px;
+    width:                  480px;
+    height:                 72px;
+    background:             url(bg-ad-top.png) no-repeat;
+	padding:				6px;
+	z-index:99;
+}
+#xo-bannerfix object, #xo-bannerfix img {display: block;}
+/* end fix for banner */
+#headerlogo img {padding: 0;}
+#headerlogo h1{
+	width: 255px;
+	padding-left: 10px;
+}
+
+#headerlogo h1 span{
+	font-size: 14px;
+}
+
+#headerbar {border-bottom: 1px solid #ddd; background-image: url(hbar.gif);}
+
+#leftcolumn {width: 260px; border-right: 0px solid #ccc; font-size:1em;}
+#leftcolumn th {background-color: #2A75C5; color: #fff; vertical-align: middle;}
+#leftcolumn .blockTitle h3 {
+    font-size: 22px;
+    margin: 0 0 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    color: #E47100;
+    font-weight: normal;
+    background-color:transparent;
+    }
+#leftcolumn .blockContent {    
+	background: none repeat scroll 0 0 #28241E;
+    border-bottom: 1px solid #1C1914;
+    border-top: 1px solid #1C1914;
+    margin-left: 1px;
+    padding: 20px 20px 20px 20px;
+    }
+
+
+#centercolumn {font-size: 1em; padding-left:25px;}
+#centercolumn th {background-color: #aca7a1; color: #746E67; vertical-align: middle;}
+
+#centerCcolumn, #bottomCcolumn {padding: 0 3px 1px 3px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {padding: 3px; color: #2A75C5; font-weight: bold; margin-top: 0; margin-right: 0;  margin-left: 0; font-size:1.1em;}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent { padding: 3px; margin-right: 0;  margin-left: 0; margin-bottom: 2px; line-height: 1.2em;}
+
+#centerLcolumn, #bottomLcolumn, #centerRcolumn, #bottomRcolumn {
+        width: 50%; padding: 0 3px 0 0;
+}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle, #centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {
+        padding: 3px; color: #2A75C5; font-weight: bold; margin-top: 0;
+}
+#centerLcolumn .blockContent, #centerRcolumn .blockContent, #bottomLcolumn .blockContent, #bottomRcolumn .blockContent {
+        padding: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 2px; line-height: 1.2em;
+}
+
+#content {text-align: left; padding: 8px;}
+
+#rightcolumn {width: 170px; border-left: 1px solid #ccc; font-size:1em;}
+#rightcolumn th {background-color: #2A75C5; color: #fff; vertical-align: middle;}
+#rightcolumn .blockTitle {padding: 3px; background-color: #ddd; color: #2A75C5; font-weight: bold;}
+#rightcolumn .blockContent {padding: 3px; line-height: 1.2em;}
+
+#footerbar { background-image: url(hbar.gif); font-size:.9em; height : 23px;}
+#footerbar td { vertical-align : middle; text-align:center;}
+
+#mainmenu{
+	padding: 20px 20px 20px 19px;
+	margin-left: 1px;
+	background: #28241e;
+	border-top: 1px solid #1c1914;
+	border-bottom: 1px solid #1c1914;
+}
+#mainmenu a {background-color: transparent; display: block; margin: 0; padding: 4px;}
+#mainmenu a:hover.menuMain {
+	display: block;
+	font-size: 14px;
+	text-decoration: none;
+	color: #DC6606;
+	font-weight: bold;
+	padding-left: 20px;
+	outline: none;
+	border: none;
+	background:#2F2A23;
+	}
+#mainmenu a.menuTop {padding-left: 3px; }
+#mainmenu a.menuMain {padding-left: 3px; }
+#mainmenu a.menuSub {padding-left: 30px; color: #a58d6e;}
+#mainmenu a.maincurrent {	
+	color: #DC6606;
+	padding: 2px 0 2px 10px;
+	background: #2f2a23;
+	}
+
+
+#usermenu { 	
+	padding: 20px 20px 20px 19px;
+	margin-left: 1px;
+	background: #28241e;
+	border-top: 1px solid #1c1914;
+	border-bottom: 1px solid #1c1914;
+	}
+#usermenu a {background-color: transparent; display: block; margin: 0; padding: 2px; font-weight : normal;}
+#usermenu a:hover {background:#2F2A23;}
+#usermenu a.menuTop {border-top: 0px solid #c0c0c0;}
+#usermenu a.highlight {background-color: #fcc;}
+
+
+caption {font-weight: bold;}
+th, thead {background-color: #2A75C5; padding : 2px; color: #fff; vertical-align : middle;}
+.outer {border: 0px solid #c0c0c0;}
+.head {background-color: #312410; padding: 5px; font-weight: bold;}
+.even {background-color: #766348; padding: 5px;}
+.odd {background-color: #442b06; padding: 5px;}
+.foot {background-color: #312410; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #766348; padding: 5px;}
+tr.odd td {background-color: #442b06; padding: 5px;}
+tr.foot td {background-color: #312410; padding: 5px; color:inherit; font-weight: bold;}
+
+.errorMsg,.confirmMsg, .resultMsg  { padding: .8em; text-align:center; margin-bottom: 1em; border: 2px solid #ddd;}
+.errorMsg  { background-color: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
+.confirmMsg { background-color: #FFF6BF; color: #817134; border-color: #FFD324; }
+.resultMsg { background-color: #E6EFC2; color: #529214; border-color: #C6D880; }
+.errorMsg a { background-color: transparent; color: #D12F19; }
+.confirmMsg a { background-color: transparent; color: #817134; }
+.successMsg a { background-color: transparent; color: #529214; }
+
+.xoopsCode { background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; height: 200px; overflow: auto; font-size:.9em;}
+.xoopsQuote { background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; font-size:.9em;}
+blockquote {font-style : italic; line-height:1.4em;}
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: .9em; color: #2A75C5; font-weight:bold; border: 1px solid #c0c0c0; background-color: #898072; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2A75C5; font-weight:bold; font-size: .9em;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: .9em;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName a {color: #fff;}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: .8em;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+/*============== Styles for system_siteclosed.html  (override system module) =================*/
+#xo-siteclose {
+    width:                  400px;
+    margin:                 100px auto;
+    background-color:       #e2e2e2;
+    padding:                30px;
+    color:                  #000;
+    font-size:              1.2em;
+    font-weight:            bold;
+    text-align:             center;
+    border:                 1px solid #666;
+}
+#xo-userbar_siteclosed {
+    display:                block;
+    background:            transparent
+    padding-top:            8px;
+    padding-right:          1em;
+    color:                  #fff;
+    font-size :             .8em;
+    text-align :            center;
+}
+#xo-userbar_siteclosed form {
+    display:                inline;
+    padding:                0;
+}
+
+#xo-userbar_siteclosed input, #xo-userbar_siteclosed button {
+    width:                  100px;
+    background-color:       transparent;
+    color:                  #fff;
+    font-size :             .9em;
+    margin:                 2px;
+}
+#xo-userbar_siteclosed input:hover {}
+
+/*============== Styles for system_redirect.html (override system module) =================*/
+#xo-redirect {
+    width:                  780px;
+    margin:                 50px auto;
+    padding:                1em;
+    font-weight:            bold;
+    text-align:             center;
+}
+#xo-redirect .notreload {
+    height:                 28px;
+    background-color:       inherit;
+    padding-top:            2px;
+    color:                  #000;
+}
+#xo-redirect .notreload a {
+    background-color:       inherit;
+    color:                  #ff0000;
+    font-weight:            bold;
+    text-decoration:        none;
+}
+#xo-redirect .message {
+    min-height:             60px;
+    background-color:       #f3f3f3;
+    padding:                1em;
+    color:                  #333;
+    font-size:              1.2em;
+    text-align:             center;
+    border:                 1px solid #666;
+}
+#xo-redirect .message img{
+    padding:                1em;
+}
+/*============== Styles for pagenav =================*/
+#xo-pagenav {
+    margin:                 7px 0;
+    text-align:             center;
+    font-size:              1.05em;
+}
+#xo-pagenav a {
+    text-decoration:        none;
+}
+#xo-pagenav a:hover {
+    color:                  #fff;
+    background-color:       #2A75C5;
+    border:                 1px solid #fff;
+}
+.xo-pagact {
+    margin:                 0;
+    padding:                .2em .5em;
+    color:                  #fff;
+    background-color:       #28241E;
+    border:                 0px solid #fff;
+}
+.xo-counterpage, .xo-pagarrow {
+    margin:                 0;
+    padding:                .2em .5em;
+    color:                  #000;
+    background-color:       #fff;
+    border:                 1px solid #000;
+}
+.xo-counterpage:hover {}
+.xo-pagarrow {
+    letter-spacing:         0.2em;
+}
+/*======= Tinymce background textarea ========*/
+body.mceContentBody {
+    margin:                 0;
+    padding:                0;
+    background-color:       #fff;
+    background-image:       none;
+    color:                  #000;
+}

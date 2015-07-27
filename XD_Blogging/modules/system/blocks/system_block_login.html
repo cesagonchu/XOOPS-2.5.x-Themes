@@ -1,0 +1,37 @@
+
+<br>
+
+<div class="txtcenter">
+	<form class="form-horizontal" action="<{xoAppUrl user.php}>" method="post">
+		<div class="control-group">
+			<div class="input-prepend">
+	                    		<span class="add-on"><i class="icon-user"></i></span><input class="span2" type="text" name="uname" id="xo-login-uname" value="" placeholder="<{$smarty.const._THEME_PSEUDO}>">
+	             	</div>
+	             </div>
+		<div class="control-group">
+	             	<div class="input-prepend">
+	             		<span class="add-on"><i class="icon-cog"></i></span><input class="span2" type="password" name="pass" id="xo-login-pass" placeholder="<{$smarty.const._THEME_PASSWORD}>">
+	             	</div>
+	             </div>
+		
+		
+		<input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+		<input type="hidden" name="op" value="login" />
+		<button class="btn center" type="submit"><{$smarty.const._THEME_LOGIN}></button>
+
+		<{$block.sslloginlink}>
+
+	</form>
+	<{if isset($block.lang_rememberme)}>
+	<label class="control-label" for="xdnotification"><{$block.lang_rememberme}></label>
+	<div class="switch switch-mini"  data-on-label="<{$smarty.const._THEME_LOGIN_YES}>" data-off-label="<{$smarty.const._THEME_LOGIN_NO}>" tabindex="0">
+		<input id="xdnotification" type="checkbox" />
+	</div>
+	<{/if}>
+	<div class="control-group">
+		<a href="<{xoAppUrl}>user.php#lost" class="btn" ><{$smarty.const._THEME_FORGOTTEN_PASSWORD}></a>
+	</div>
+	<div class="control-group">
+		<a href="<{xoAppUrl register.php}>"  class="btn btn-success" title="<{$block.lang_registernow}>"><{$block.lang_registernow}></a>
+	</div>
+</div>

@@ -1,0 +1,379 @@
+html, body {color: #000; background-color: #13346e; margin: 0; padding: 20px; font-size:9pt; font-family: Verdana, Arial, Helvetica, sans-serif;width: 1000px;margin-left: auto;margin-right: auto;
+background-image: -webkit-radial-gradient(50% 50%, ellipse closest-side, #53B8EB, #13346E 100%);
+background-image:    -moz-radial-gradient(50% 50%, ellipse closest-side, #53B8EB, #13346E 100%);
+background-image:     -ms-radial-gradient(50% 50%, ellipse closest-side, #53B8EB, #13346E 100%);
+background-image:      -o-radial-gradient(50% 50%, ellipse closest-side, #53B8EB, #13346E 100%);
+background-image:         radial-gradient(50% 50%, ellipse closest-side, #53B8EB, #13346E 100%);
+
+
+}
+
+table {width: 100%;}
+table td {padding: 0; border-width: 0; vertical-align: top; }
+
+a {color: #666; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: #ff6600;}
+
+h1 {font-size:1.4em;}
+h2 {font-size:1.3em;}
+h3 {font-size:1.2em;}
+h4 {font-size:1.1em;}
+h5 {font-size:1em;}
+ul { margin: 2px; padding: 2px; list-style: disc inside; text-align: left;}
+ol { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; color: #2A75C5;}
+
+input.formButton {}
+
+.item {border: 0px solid #666;}
+.itemHead {padding: 3px; background-color: #ddd; color: #fff;}
+.itemInfo {text-align: right; padding: 3px; background-color: #efefef}
+.itemTitle a {font-size: 1.2em; font-weight: bold; font-variant: small-caps; color: #fff; background-color: transparent;}
+.itemPoster {font-size: .9em; font-style:italic;}
+.itemPostDate {font-size: .9em; font-style:italic;}
+.itemStats {font-size: .9em; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 1.3em; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-color: #efefef;}
+.itemAdminLink {font-size: .9em;}
+.itemPermaLink {font-size: .9em;}
+
+#header {
+    margin :                0;
+    padding :               0;
+    height:                 80px;
+    background-color:       #fff;
+    color:                  #fff;
+   
+    width: 980px;
+}
+#headerbanner {
+	
+	background-image: url(XDimages/xdbarnav.png);
+    background-repeat: no-repeat;
+    float: right;
+    margin-right: -6px;
+    position: relative;
+    width: 675px;
+    margin-top: 12px;
+	}
+
+#headerbanner ul{
+    height: 36px;
+    padding-top: 20px;
+    width: 100%;
+    padding-left: 55px;
+}
+
+#headerbanner li{
+	display: inline;
+	padding-left: 10px;
+}
+
+#headerbanner li a{
+	color: #fff;
+}	
+	
+/* fix for banner */
+#xo-bannerfix {
+    /*position:               absolute;*/
+	position: relative;
+	float: right;
+    top:                    5px;
+    right:                  25px;
+    width:                  480px;
+    height:                 72px;
+    background:             url(bg-ad-top.png) no-repeat;
+	padding:				6px;
+	z-index:99;
+}
+
+.XD-block {padding: 0 5px 0 0;}
+
+#xo-bannerfix object, #xo-bannerfix img {display: block;}
+/* end fix for banner */
+#headerlogo{
+	float: left;
+}
+#headerlogo img {padding: 0;}
+#headerbar {border-bottom: 1px solid #ddd; background-image: url(hbar.gif);}
+
+#leftcolumn {width: 170px; padding-left: 5px; font-size:1em;}
+#leftcolumn th {background-color: #ddd; color: #fff; vertical-align: middle;}
+#leftcolumn .blockTitle {padding: 3px; background-color: #ddd; color: #000; font-weight: bold;}
+#leftcolumn .blockContent {padding: 3px; line-height: 1.2em;}
+
+#XDCcontent{
+	width: 980px;
+	background-color: #fff;
+}
+
+/*=========================== XDbloc-center.html ===============*/
+
+#XDbloc-center{
+	background-image: url(XDimages/XDbloc-center.png);
+  	background-position: left center;
+    background-repeat: no-repeat;
+    height: 98px;
+    margin-left: -11px;
+    margin-top: -14px;
+    position: absolute;
+    width: 1010px;
+}
+
+#XDbloc-center table{
+	width: 990px;
+	margin-top: 25px;
+}
+
+#XDbloc-center .xdtab {
+	width:250px;
+	color:#FFF;
+	background-color: transparent;
+}
+
+#XDbloc-center .xdtab1{color:#FFF;background-color:transparent;width:50px;font-weight: normal;}
+
+
+#XDbloc-center .xdtab2{width:450px;background-color:transparent;font-weight: normal;}
+
+
+#XDbloc-center .xdtab3{width:100px;background-color:transparent;}
+
+#XDbloc-center .xdtab3 a{
+	padding: 10px;
+	background-color: #606060;
+	color: #fff;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #9A9898;
+}
+
+#XDbloc-center .xdtab3 a:hover{
+color: #ff6600;
+}
+
+
+/*=========================== Start XDbloc-center-img.html ===============*/
+
+#xdbloc-center-img{
+	margin-top: 71px;
+	background-color: #fff;
+	width: 980px;
+}
+
+
+#xdbloc-center-img table{
+	width:980px;
+}
+
+#xdbloc-center-img .tab1{background-color:transparent;width: 300px;}
+#xdbloc-center-img .tab2{background-color:transparent;color: #000;font-weight: bold;width: 300px;text-align: center;}
+
+#xdbloc-center-img .tab2 a{
+	color: #000;
+	text-decoration: underline;
+}
+#xdbloc-center-img .tab3{background-color:transparent;width: 300px;color: #000;font-weight: normal;}
+
+#xdbloc-center-img .tab3 p{
+	 padding-left: 20px;
+    padding-right: 20px;
+    text-align: left;
+}
+
+/*=========================== End XDbloc-center-img.html ===============*/
+
+#centercolumn {font-size: 1em; padding: 0 0 0 1px;}
+#centercolumn th {background-color: #ddd; color: #fff; vertical-align: middle;}
+
+#centerCcolumn, #bottomCcolumn {padding: 0 3px 1px 3px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {padding: 3px; color: #000; font-weight: bold; margin-top: 0; margin-right: 0;  margin-left: 0; font-size:1.1em;background-color: #E6E6E6;}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {padding: 3px; margin-right: 0;  margin-left: 0; margin-bottom: 2px; line-height: 1.2em;}
+
+#centerLcolumn, #bottomLcolumn, #centerRcolumn, #bottomRcolumn {
+        width: 50%; padding: 0 3px 0 0;
+}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle, #centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {
+        padding: 3px; color: #000; font-weight: bold; margin-top: 0;background-color: #E6E6E6;
+}
+#centerLcolumn .blockContent, #centerRcolumn .blockContent, #bottomLcolumn .blockContent, #bottomRcolumn .blockContent {
+        padding: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 2px; line-height: 1.2em;
+}
+
+#content {text-align: left; padding: 8px;}
+
+#rightcolumn {width: 170px;font-size:1em;}
+#rightcolumn th {background-color: #ddd; color: #fff; vertical-align: middle;}
+
+#footerbar { background-image: url(XDimages/xdfooter.png); font-size:.9em; height : 43px; text-align:center;width: 980px;}
+
+#footerbar p{
+	padding-top: 10px;
+	margin: 0;
+	color: #fff;
+}
+
+#rightcolumn .blockTitle {padding: 3px; background-color: #ddd; color: #000; font-weight: bold;}
+#rightcolumn .blockContent {padding: 3px; line-height: 1.2em;}
+
+
+#mainmenu a {background-color: transparent; display: block; margin: 0; padding: 4px;}
+#mainmenu a:hover {background-color: #E6E6E6;}
+#mainmenu a.menuTop {padding-left: 3px; }
+#mainmenu a.menuMain {padding-left: 3px; }
+#mainmenu a.menuSub {padding-left: 9px; }
+#mainmenu a.maincurrent {background-color:transparent; color:#ff9900;}
+
+#usermenu { font-size : .9em;}
+#usermenu a {background-color: transparent; display: block; margin: 0; padding: 2px;font-weight : normal;}
+#usermenu a:hover {background-color: #E6E6E6;}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color: #fcc;}
+
+
+caption {font-weight: bold;}
+th, thead {background-color: #ddd; padding : 2px; color: #fff; vertical-align : middle;}
+.outer {border: 0px solid #c0c0c0;}
+.head {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+.even {background-color: #dee3e7; padding: 5px;}
+.odd {background-color: #E9E9E9; padding: 5px;}
+.foot {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #dee3e7; padding: 5px;}
+tr.odd td {background-color: #E9E9E9; padding: 5px;}
+tr.foot td {background-color: #c2cdd6; padding: 5px; color:inherit; font-weight: bold;}
+
+.errorMsg,.confirmMsg, .resultMsg  { padding: .8em; text-align:center; margin-bottom: 1em; border: 2px solid #ddd;}
+.errorMsg  { background-color: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
+.confirmMsg { background-color: #FFF6BF; color: #817134; border-color: #FFD324; }
+.resultMsg { background-color: #E6EFC2; color: #529214; border-color: #C6D880; }
+.errorMsg a { background-color: transparent; color: #D12F19; }
+.confirmMsg a { background-color: transparent; color: #817134; }
+.successMsg a { background-color: transparent; color: #529214; }
+
+.xoopsCode { background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; height: 200px; overflow: auto; font-size:.9em;}
+.xoopsQuote { background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; font-size:.9em;}
+blockquote {font-style : italic; line-height:1.4em;}
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: .9em; color: #2A75C5; font-weight:bold; border: 1px solid #c0c0c0; background-color: #fff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2A75C5; font-weight:bold; font-size: .9em;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: .9em;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName a {color: #fff;}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: .8em;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+/*============== Styles for system_siteclosed.html  (override system module) =================*/
+#xo-siteclose {
+    width:                  400px;
+    margin:                 100px auto;
+    background-color:       #e2e2e2;
+    padding:                30px;
+    color:                  #000;
+    font-size:              1.2em;
+    font-weight:            bold;
+    text-align:             center;
+    border:                 1px solid #666;
+}
+#xo-userbar_siteclosed {
+    display:                block;
+    background:             #2A75C5 url(xo-banner_bg.png) repeat-x left top;
+    padding-top:            8px;
+    padding-right:          1em;
+    color:                  #fff;
+    font-size :             .8em;
+    text-align :            center;
+}
+#xo-userbar_siteclosed form {
+    display:                inline;
+    padding:                0;
+}
+
+#xo-userbar_siteclosed input, #xo-userbar_siteclosed button {
+    width:                  100px;
+    background-color:       transparent;
+    color:                  #fff;
+    font-size :             .9em;
+    margin:                 2px;
+}
+#xo-userbar_siteclosed input:hover {}
+
+/*============== Styles for system_redirect.html (override system module) =================*/
+#xo-redirect {
+    width:                  780px;
+    margin:                 50px auto;
+    padding:                1em;
+    font-weight:            bold;
+    text-align:             center;
+}
+#xo-redirect .notreload {
+    height:                 28px;
+    background-color:       inherit;
+    padding-top:            2px;
+    color:                  #000;
+}
+#xo-redirect .notreload a {
+    background-color:       inherit;
+    color:                  #ff0000;
+    font-weight:            bold;
+    text-decoration:        none;
+}
+#xo-redirect .message {
+    min-height:             60px;
+    background-color:       #f3f3f3;
+    padding:                1em;
+    color:                  #333;
+    font-size:              1.2em;
+    text-align:             center;
+    border:                 1px solid #666;
+}
+#xo-redirect .message img{
+    padding:                1em;
+}
+/*============== Styles for pagenav =================*/
+#xo-pagenav {
+    margin:                 7px 0;
+    text-align:             center;
+    font-size:              1.05em;
+}
+#xo-pagenav a {
+    text-decoration:        none;
+}
+#xo-pagenav a:hover {
+    color:                  #fff;
+    background-color:       #2A75C5;
+    border:                 1px solid #fff;
+}
+.xo-pagact {
+    margin:                 0;
+    padding:                .2em .5em;
+    color:                  #fff;
+    background-color:       #ddd;
+    border:                 1px solid #fff;
+}
+.xo-counterpage, .xo-pagarrow {
+    margin:                 0;
+    padding:                .2em .5em;
+    color:                  #000;
+    background-color:       #fff;
+    border:                 1px solid #000;
+}
+.xo-counterpage:hover {}
+.xo-pagarrow {
+    letter-spacing:         0.2em;
+}
+/*======= Tinymce background textarea ========*/
+body.mceContentBody {
+    margin:                 0;
+    padding:                0;
+    background-color:       #fff;
+    background-image:       none;
+    color:                  #000;
+}

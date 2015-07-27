@@ -1,0 +1,50 @@
+/*
+Credit: http://www.templatemo.com
+*/
+
+#templamteo_body_wrapper {
+	width: 100%;
+	background: url(images/templatemo_wrapper.jpg) top center no-repeat;
+	
+}
+
+#templatemo_wrapper {
+	width: 940px;
+	margin: 0 auto;
+	background: url(images/templatemo_wrapper.jpg) top center no-repeat	;
+}
+
+#templatemo_top {
+	width: 940px; height: 60px;
+}
+
+#templatemo_main_top { width: 940px; height: 40px; padding-top: 40px; background: url(images/templatemo_main_top.png) no-repeat bottom center ;}
+
+#templatemo_main {
+	clear: both;
+	width: 940px;
+	background: url(images/templatemo_main.jpg) repeat-y;
+}
+
+#slider {
+	clear: both;
+	width: 600px;
+	height: 300px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	margin-left: 20px;
+}
+
+#templatemo_footer {
+	clear: both;
+	width: 640px;
+	padding: 20px 0 20px 300px;
+	color: #856a47;
+	background: url(images/templatemo_footer.png) top no-repeat;
+}
+
+#templatemo_footer span{
+	padding-left: 20px;
+}
+
+#templatemo_footer a { color: #d7812d; font-weight: 400 ;}

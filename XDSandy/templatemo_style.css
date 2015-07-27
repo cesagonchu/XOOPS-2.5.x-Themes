@@ -1,0 +1,87 @@
+/*
+Credit: http://www.templatemo.com
+*/
+
+
+
+
+#templatemo_outer_wrapper { width: 100%; background: url(images/templatemo_outer_wrapper.png) top repeat-x }
+#templatemo_wrapper { width: 940px; padding: 0 20px; margin: 0 auto;  background: url(images/templatemo_site_header.png) no-repeat center 15px scroll }
+#templatemo_sidebar { float: left; width: 260px; margin-top: 160px; padding-bottom: 40px }
+
+/* use this for sidebar bg 
+#templatemo_wrapper { width: 940px; padding: 0 20px; margin: 0 auto; background: url(images/sidebar_top.png) no-repeat scroll 20px 140px }
+#templatemo_sidebar { float: left; width: 260px; margin-top: 160px; padding-bottom: 40px; background: url(images/sidebar.jpg) scroll 0 20px repeat-y }
+*/
+
+#templatemo_menu { 
+	width: 260px; 
+	height: 405px; 
+	margin-top: -60px; 
+	margin-bottom: 20px; 
+	background: url(images/templatemo_menu_bg.png) top center no-repeat   
+}
+
+#templatemo_menu ul { 
+	margin: 0; 
+	padding: 130px 70px 0; 
+	list-style: none 
+}
+
+#templatemo_menu ul li { 
+	padding: 0;
+	margin: 0; 
+}
+
+#templatemo_menu ul li a { 
+	display: block; 
+	font-family: Georgia, "Times New Roman", Times, serif; 
+	width: 120px; 
+	text-align: center; 
+	padding-bottom: 12px; 
+	border-bottom: 1px dotted #7c745f; 
+	margin-bottom: 12px; 
+	font-size: 14px; 
+	text-decoration: none; 
+	color: #a39668; 
+	font-weight: bold; 
+	background: url(images/templatemo_menu.png) no-repeat left center 
+}
+
+#templatemo_menu ul li a:hover, #templatemo_menu ul .current { color: #e0dacb; }
+#templatemo_menu ul .last { border: none; }
+
+.sidebar_box { padding: 0 20px; }
+.sidebar_box h4 { color: #0f3252 }
+.sbb_last { border-bottom: none }
+
+
+
+#templatemo_main { float: right; width: 940px }
+
+#templatemo_header { height: 140px; margin-bottom: 40px; }
+
+
+
+
+
+#templatemo_content { clear: both; padding-bottom: 40px }
+#templatemo_content h2 { line-height: 30px }
+#templatemo_content p { margin-bottom: 15px }
+#content_title_box { clear: both; color: #fff; font-size: 16px; line-height: 24px; margin-bottom: 80px; }
+#templatemo_footer_wrapper { 
+	clear: both; 
+	width: 100%; 
+	border-top: 5px solid #5c4a22; 
+	background: #1d180c; 
+}
+
+#templatemo_footer { 
+	width: 940px; 
+	padding: 20px; 
+	margin: 0 auto; 
+	text-align: center; 
+	color: #7a6e52; 
+}
+
+#templatemo_footer a { color: #c4bdac }

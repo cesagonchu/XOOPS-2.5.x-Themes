@@ -1,0 +1,30 @@
+<div id="templatemo_header">
+    	<div id="site_title">
+            <h1><a href="<{xoAppUrl /}>"><img src="<{xoImgUrl images/templatemo_logo.png}>" alt="logo" /><span><{$xoops_slogan}></span></a></h1>
+        </div> <!-- end of site_title -->
+        
+        <div id="header_right">  
+          <{if $xoops_banner and $xoops_banner != '&nbsp;'}>
+          <div id="xo-banner-ad"><{$xoops_banner|smarty:nodefaults}></div>
+             <{else}>   
+         <{includeq file="$theme_name/social_box.html"}>            
+       <{/if}>      
+            <div id="templatemo_menu">
+			   <ul>
+					<{php}>
+					    include_once XOOPS_ROOT_PATH.'/modules/system/blocks/system_blocks.php';
+					    $modules = b_system_main_show();
+					    $this->assign('defModules', $modules);
+					<{/php}>
+					
+					<li><a href="<{$xoops_url}>" <{if $xoops_dirname == "system"}> class="current"<{/if}>><span>Accueil</span></a></li>
+					<{foreach item=module from=$defModules.modules}>
+					<li><a href="<{$xoops_url}>/modules/<{$module.directory}>/" <{if $xoops_dirname== $module.directory}> class="current"<{/if}> title="<{$module.name}>"><span><{$module.name}></span></a>
+					<{/foreach}>
+					
+				</ul> 
+                  	
+            </div> 
+    	</div>    
+    </div>
+    

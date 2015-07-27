@@ -1,0 +1,77 @@
+<style type="text/css">
+
+
+#xdblockuser { }
+
+#xdblockuser .xdbutton{ 
+	    background: url(<{xoImgUrl images/login-button-left.png}>) no-repeat scroll 0 0 transparent;
+    display: inline;
+    float: left;
+    height: 34px;
+    margin-left: -3px;
+    margin-top: 5px;
+    
+	
+	}
+	
+#xdblockuser .xdbutton input[type="submit"] {
+	background: url(<{xoImgUrl images/login-button-right.png}>) no-repeat scroll right 0 transparent;
+    display: inline;
+    float: left;
+    height: 34px;
+    margin: 0px -7px 0 0;
+    position: relative;
+    width: 119px;
+    border:medium none;
+        color: #A9ECFF;
+    cursor: pointer;
+    font-family: "Trebuchet MS",arial,sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 34px;
+    text-shadow: 1px -1px 1px #0A2140;
+    text-transform: uppercase;
+	}
+
+#xdblockuser input[type="text"]{
+	background: none repeat scroll 0 0 #C7C7C7;
+    border: medium none;
+    line-height: 16px;
+    margin-bottom: 6px;
+    font-size:16px;
+    padding: 5px;
+    width: 236px;
+	}
+	
+#xdblockuser input[type="password"]{
+	background: none repeat scroll 0 0 #C7C7C7;
+    border: medium none;
+    line-height: 16px;
+    margin-bottom: 6px;
+    font-size:16px;
+    padding: 5px;
+    width: 236px;
+	}	
+
+</style>
+
+<div id="xdblockuser">
+	<form style="margin-top: 0;" action="<{xoAppUrl user.php}>" method="post">
+		<{$block.lang_username}><br />
+		<input type="text" name="uname" size="12" value="<{$block.unamevalue}>" maxlength="25" /><br />
+		<{$block.lang_password}><br />
+		<input type="password" name="pass" size="12" maxlength="32" /><br />
+		<{if isset($block.lang_rememberme)}>
+			<input type="checkbox" name="rememberme" value="On" class ="formButton" /><{$block.lang_rememberme}><br />
+		<{/if}>
+		<br />
+		<input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+		<input type="hidden" name="op" value="login" />
+		<span class="xdbutton"><input type="submit" value="<{$block.lang_login}>" /></span><br />
+		<{$block.sslloginlink}>
+	</form>
+	<br /><br />
+	<a href="<{xoAppUrl user.php#lost}>" title="<{$block.lang_lostpass}>"><{$block.lang_lostpass}></a>
+	<br /><br />
+	<a href="<{xoAppUrl register.php}>" title="<{$block.lang_registernow}>"><{$block.lang_registernow}></a>
+</div>

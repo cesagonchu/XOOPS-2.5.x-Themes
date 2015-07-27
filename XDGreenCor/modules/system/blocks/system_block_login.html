@@ -1,0 +1,10 @@
+<form action="<{xoAppUrl user.php}>" method="post">
+	<label><strong><{$block.lang_username}></strong></label>
+	<div class="input-prepend"><span class="add-on"><i class="icon-user"></i></span><input type="text" name="uname" value="<{$block.unamevalue}>"></div>
+	<label><strong><{$block.lang_password}></strong></label>
+	<div class="input-prepend"><span class="add-on"><i class="icon-lock"></i></span><input type="password" name="pass"></div>
+	<input type="hidden" name="xoops_redirect" value="<{$xoops_requesturi}>" />
+	<input type="hidden" name="op" value="login" />
+	<{if isset($block.lang_rememberme)}><input type="checkbox" name="rememberme" value="On" class ="formButton" /><{$block.lang_rememberme}><{/if}><input class="pull-right" type="submit" value="<{$block.lang_login}>" />
+</form>
+<a href="<{xoAppUrl user.php#lost}>" title="<{$block.lang_lostpass}>"><{$block.lang_lostpass}></a><br><a href="<{xoAppUrl register.php}>" title="<{$block.lang_registernow}>"><{$block.lang_registernow}></a>

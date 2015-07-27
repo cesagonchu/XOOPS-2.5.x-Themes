@@ -1,0 +1,548 @@
+@import url(xosystpl.css);
+@import url(forms.css);
+@import url(blocks.css);
+@import url(content.css);
+@import url(xoopseditor.css);
+
+html {
+    
+}
+body {
+    background-color: #923947;
+    background-image: url(../images/templatemo_body.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #333333;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ======= Body wrapper ======= */
+#xo-wrapper {}
+#xo-bgstatic {}
+#xo-canvas {
+    margin:                 0;
+    background-color:       transparent;
+    color:                  #000;
+}
+body.theme-dialog #xo-canvas {
+    margin:                 0 6px;
+}
+/*================= Content Zone ===================*/
+#xo-canvas-content {
+    background-color:#F9CED4;
+    padding:                12px;
+    color:                  inherit;
+        width: 920px;
+    margin-left: auto;
+    margin-right: auto;
+   -webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+#xo-page {
+    padding-top:            10px;
+    width:                  100%; /* add by kris */
+}
+#xo-canvas-rightcolumn {
+    padding:                .5em;
+}
+#xo-content {
+    clear:                  both;
+    margin:                 0;
+    background-color:       inherit;
+    padding:                .5em;
+    color:                  #333;
+}
+
+#xo-content table td {
+    vertical-align:         top;
+}
+
+/* ============== header ================= */
+#xo-header {}
+
+/* ---------- Banner ---------- */
+#xo-banner {
+    clear:              both;
+    /* Use relative pos to ensure the banner ad img/flash is relative to the header */
+    position:               relative;
+    z-index:                100;
+    width:                  100%;
+    height:                 80px;
+    background:             #f1f1f1 url(../img/header-bg.png) repeat-x left bottom;
+    color:                  #7BADEA;
+}
+
+#xo-banner.commercial {
+    height:                 117px;
+    background-image:       url(../img/header-bg_big.png);
+}
+
+/*body.theme-dialog #xo-banner {
+    height:                 48px;
+    padding-top:            6px;
+    padding-left:           10px;
+}*/
+
+#xo-banner-ad {
+    background: url("../img/bg-ad-top.png") no-repeat scroll 0 0 transparent;
+    height: 72px;
+    left: 195px;
+    padding: 6px;
+    position: relative;
+    top: 7px;
+    width: 480px;
+}
+
+#xo-banner-ad object, #xo-banner-ad img {
+    display:                block;
+}
+
+/*---------------------- Site name in header ----------------------------*/
+#xo-site-title {}
+a#xo-site-title {}
+a:hover#xo-site-title {}
+#xo-site-title.commercial {}
+#xo-site-title .commercial a:hover {}
+/*----------------------- slogan in header ------------------------*/
+#xo-site-slogan {}
+#xo-site-slogan.commercial {}
+/*------------------------ logo ----------------------------*/
+#xo-main-logo {}
+#xo-main-logo.commercial {}
+/*-------- Bannder-----------*/
+#xo-banner form {}
+#xo-banner input {}
+/*============== Styles in userbar.html =================*/
+#xo-userbar {
+    bottom: 1px;
+    color: #1251C6;
+    position: relative;
+    text-align: center;
+    top: 50px;
+}
+#xo-userbar form {
+    display:                inline;
+    padding:                0;
+}
+#xo-userbar button {
+    margin:                 0;
+    margin-bottom:          -2px;
+    background:             transparent none;
+    padding:                0;
+    color:                  #7BADEA;
+    border:                 0 none transparent;
+}
+#xo-userbar button img {
+    width:                  22px;
+    height:                 22px;
+}
+#xo-userbar button:hover {
+     border:                0 !important;
+ }
+#xo-userbar img {
+    width:                  26px;
+    height:                 26px;
+}
+#xo-userbar a {
+    color:                  #1251c6;
+    background-color:       inherit;
+    text-decoration:        none;
+}
+#xo-userbar a:hover {
+    color:                  #000;
+    background-color:       inherit;
+}
+#xo-uname {
+    font-weight:            bold;
+    font-size:              1.1em;
+}
+
+/*=============== templatemo_sp_box.html ================*/
+#templatemo_sp_box {
+	clear: both;
+	width: 910px;
+	padding: 20px 30px;
+	height: 118px;
+	margin-bottom: 20px;
+	background: url(../images/templatemo_sp_box.png) no-repeat center top;
+}
+
+#templatemo_sp_box img {
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+
+#templatemo_sp_box .right {
+	float: right;
+	width: 200px;
+}
+
+#templatemo_sp_box p {
+	margin-bottom: 15px;
+	color: #000;
+	text-shadow: 0px 0px 0px #555555;
+	font-size: 13px;
+	padding-left: 15px;
+}
+
+#templatemo_sp_box .button a span { color: #000; }
+#templatemo_sp_box .button a { color: #000;	 }
+#templatemo_sp_box .button a:hover { color: #900; }
+
+.button{
+	padding-left: 15px;
+}
+
+.button a { color: #000; font-weight: bold; }
+
+.button a span { color: #000; font-size: 18px; }
+
+.button a:hover { color: #900; text-decoration: none; }
+
+.dright h5{
+	padding-left: 15px;
+}
+
+.dright{
+    color: #FFFFFF;
+    font-size: 16px;
+    margin: -25px 0 10px;
+    text-shadow: 1px 1px 1px #555555;
+    padding-left: 55px;
+}
+/*=============== templatemo_header.html ==================*/
+#templatemo_wrapper { 
+	width: 970px;
+	margin: 0 auto;
+}
+
+#templatemo_header {
+	width: 910px;
+	height: 160px;
+	padding: 0 30px;
+	margin: 50px 0 20px;
+	background: url(../images/templatemo_header.png) no-repeat bottom center;	
+}
+
+#templatemo_header  #site_title {
+	float: left;
+	width: 210px;
+	padding: 50px 0 0 10px;
+}
+
+#templatemo_header  #site_title a {
+	margin: 0px;
+	padding: 0px;
+	font-size: 40px;
+	color: #ffffff;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#templatemo_header  #site_title a span {
+	display: block;
+	font-size: 14px;
+	color: #333;
+	font-weight: normal;
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+#header_right {
+	float: right;
+	width: 660px;
+}
+
+#social_box {
+	float: right;
+	display: inline-block;
+	margin: 20px 0 10px;
+	padding: 0;
+	list-style: none;
+}
+
+#social_box li {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#social_box li a {
+	width: 46px;
+	height: 46px;
+	margin-right: 5px;
+}
+
+
+/* menu */
+
+#templatemo_menu {
+	clear: both;
+	float: right;
+	display: inline-block;
+}
+
+#templatemo_menu ul {
+	display: inline-block;
+	height: 75px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#templatemo_menu ul li {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+}
+
+#templatemo_menu ul li a {
+	float: left;
+	display: block;
+	height: 60px;
+	width: 120px;
+	padding: 15px 0 0 0;
+	font-size: 11px;
+	color: #bc7682;	
+
+	text-align: center;
+	text-decoration: none;
+	font-weight: normal;
+	outline: none;
+	border: none;
+}
+
+#templatemo_menu ul li a span {
+	display: block;
+	font-size: 20px;
+	font-weight: normal;
+	color: #bc7682;
+}
+
+#templatemo_menu ul li .last {
+	background: none;
+}
+
+#templatemo_menu ul li a:hover, #templatemo_menu ul .current {
+	color: #6e202c;
+	background: url(../images/templatemo_menu_hover.png) center center no-repeat;
+}
+
+ #templatemo_menu ul li a:hover span, #templatemo_menu ul .current span {
+	 color: #6e202c;
+ }
+
+#templatemo_menu ul li a span:hover {
+	color: #6e202c;
+}
+/* end of menu */
+
+/* content */
+
+#templatemo_content_wrapper {
+	clear: both;
+	width: 970px;
+}
+
+#templatemo_content_top {
+	width: 970px;
+	height: 20px;
+	background: url(../images/templatemo_content_top.png) no-repeat center bottom;
+}
+
+#templatemo_content_bottom {
+	width: 970px;
+	height: 20px;
+	background: url(../images/templatemo_content_bottom.png) no-repeat center top;
+}
+	
+#templatemo_content {
+	padding: 10px 30px;
+	background: url(../images/templatemo_content.png) repeat-y center;
+}
+
+
+#templatemo_content p {
+	margin-bottom: 10px;
+}
+
+.col_w425 {
+	width: 425px;
+}
+
+.col_w270 {
+	float: left;
+	margin-right: 50px;
+	width: 270px;
+}
+
+.col_w590 {
+	width: 590px;
+	margin-right: 50px;
+}
+
+.col_last {
+	margin-right: 0;
+}
+
+.sb_news_box {
+	margin-bottom: 20px;
+	padding: 10px 0 20px 0;
+	border-bottom: 1px solid #fff;
+}
+
+.sb_news_box img {
+	float: left;
+	width: 80px;
+	height: 80px;
+	border: 1px solid #FFF;
+	padding: 2px;
+}
+
+.sb_news_box .nb_right {
+	float: right;
+	width: 170px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.sb_news_box .nb_right a {
+	text-decoration: none;
+}
+
+.sb_news_box .nb_right a h6 {
+	color: #6d232e;
+	text-decoration: underline;
+}
+
+.news_box {
+	clear: both;
+	margin-bottom: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px dashed #fff;
+}
+
+.news_box .news_meta {
+	margin-bottom: 10px;
+}
+
+.news_box img {
+	float: right;
+	width: 240px;
+	height: 180px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+	border: 1px solid #fff;
+	padding: 4px;
+}
+
+.news_box h2 {
+	margin-bottom: 10px;
+}
+
+.news_box_last {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+
+.service_box {
+	clear: both;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+	border-bottom: 1px dashed #fff;
+}
+
+.service_box img {
+	float: left;
+	width: 48px;
+	height: 48px;
+}
+
+.service_box .sb_right {
+	float: right;
+	width: 500px;
+}
+
+.comment{
+	font-weight: bold;
+}
+
+/* ===== Footer ===== */
+#xo-footer {
+    margin:                 0;
+    background-color:       transparent;
+    padding:                .5em;
+    color:                  #fff;
+    font-size:              .9em;
+    text-align:             center;
+}
+
+body.theme-dialog #xo-footer {
+    padding:                .2em .5em;
+    font-size:              .8em;
+}
+#xo-footer a {
+    background-color:       inherit;
+    color:                  #333;
+}
+
+#xo-footer a:hover {
+    background-color:       inherit;
+    color:                  #fff;
+    text-decoration:        underline;
+}
+/*========== xo_footerstatic.html ==========*/
+#xo-footerstatic * { margin: 0; padding: 0;}
+#xo-footerstatic {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: none;
+  color: #000;
+  font-size: 11px;
+}
+body>#xo-footerstatic {  position: fixed;}
+#xo-footerstatic #controls {
+  margin: 0 20px 0 20px;
+  background-color: #fff;
+  line-height: 39px;
+  text-shadow:	2px 2px 3px #aaa;
+  border: 1px solid #b5b5b5;
+  border-bottom: none;
+}
+#xo-footerstatic #controls  { margin-top: 1px; background: #E7F4F7; padding: 3px 10px 0 10px;}
+#xo-footerstatic .separate { margin-left: 3px; border-left: 1px solid #b5b5b5;}
+#xo-footerstatic #controls ul, li { margin: 0;  padding: 0;}
+#xo-footerstatic #controls ul { list-style: none;}
+#xo-footerstatic #controls li { display: inline-block; height: 29px; line-height: 27px; padding-right: 6px;}
+#xo-footerstatic .icon { vertical-align: text-bottom;}
+#xo-footerstatic .icon-chat { padding-top: 3px;}
+#xo-footerstatic .chat, .icon-chat { float: right;}
+#xo-footerstatic .text { vertical-align: top;}
+
+/* ===== debug messages ===== */
+#xo-logger-output {
+    font-size:              .8em;
+	margin-bottom:			35px;
+}
+#xo-logger-tabs a:hover {background-color: transparent; color: #fff;}
+table #xo-logger-queries tr {width: 100%;)
+.outer {border: 1px solid silver;}
+.head {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+.even {background-color: #dee3e7; padding: 5px;}
+.odd {background-color: #E9E9E9; padding: 5px;}
+.foot {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #dee3e7; padding: 5px;}
+tr.odd td {background-color: #E9E9E9; padding: 5px;}

@@ -1,0 +1,14 @@
+<{if $xoBlocks.canvas_right}>
+<div id="xd-rightBlock">
+	<div class="span3 pull-right">
+		<{foreach item=block from=$xoBlocks.canvas_right}>
+		<div id="XD-block-<{$block.module}>-<{$block.id}>">
+		<button data-dismiss="alert" class="close" type="button">×</button>	
+		<{if $block.title}><div class="xd-blockTitle"><{$block.title}></div><{/if}>
+		<div class="xd-blockContent"><{$block.content}></div>
+		<div class="xd-blockContent-bottom"></div>
+		</div>
+        		<{/foreach}>
+	</div>
+</div>
+<{/if}>

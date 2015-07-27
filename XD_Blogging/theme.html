@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+    <!-- Assign Theme name -->
+<{assign var=theme_name value=$xoTheme->folderName}>
+	<!-- Title and meta -->
+<meta charset="UTF-8">
+<title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> - <{/if}><{$xoops_sitename}></title>
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="generator" content="XOOPS" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Rss -->
+<link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl backend.php}>" />
+	<!-- Favicon -->
+<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+ <link rel="icon" type="image/png" href="<{xoImgUrl icons/favicon.png}>" />
+ <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+ <{$xoops_module_header}>
+    
+<link href='http://fonts.googleapis.com/css?family=Inder' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/bootstrap.min.css}>" />
+<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/bootstrapSwitch.css}>" />
+ <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/bootstrap-responsive.min.css}>" />
+ <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/style.css}>" />
+<script type="text/javascript" src="<{xoAppUrl browse.php?Frameworks/jquery/jquery.js}>"></script>
+<script type="text/javascript" src="<{xoImgUrl js/bootstrapSwitch.js}>"></script>
+<script type="text/javascript" src="<{xoImgUrl js/bootstrap.min.js}>"></script>
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+	<header>
+	<div class="xd-subnav">
+		<div class="container">
+			 <div class="navbar">
+			              <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar">
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              <span class="icon-bar"></span>
+			              </a>
+			              <a href="<{$xoops_url}>" class="xd-brand">Xoops</a>
+			              <div class="nav-collapse collapse navbar-responsive-collapse">
+				              <ul class="nav">
+					              <li class="active"><a href="<{$xoops_url}>"><{$smarty.const._THEME_HOME}></a></li>
+					              <li><a href="#">Link</a></li>
+					              <li><a href="#">Link</a></li>
+					              <li class="dropdown">
+					              <a data-toggle="dropdown" class="dropdown-toggle" href="#">Dropdown <b class="caret"></b></a>
+						              <ul class="dropdown-menu">
+						              <li><a href="#">Action</a></li>
+						              <li><a href="#">Another action</a></li>
+						              <li><a href="#">Something else here</a></li>
+						              <li class="divider"></li>
+						              <li class="nav-header">Nav header</li>
+						              <li><a href="#">Separated link</a></li>
+						              <li><a href="#">One more separated link</a></li>
+						              </ul>
+					              </li>
+				              </ul>
+				              <div class="input-append xd-form-header">
+				        		<form id ="xd-serach-header"  action="<{xoAppUrl search.php}>" method="get">
+							<input type="text" name="query" placeholder="<{$smarty.const._THEME_SEARCH_DESC}>"/>
+							<input type="hidden" name="action" value="results" />
+							<button  class="btn" type="submit"><i class="icon-search"></i></button>
+						</form>
+					</div>
+			              		
+			              </div><!-- /.nav-collapse -->
+		              </div><!-- /navbar -->
+	              </div><!-- /container-->
+              </div>
+	 <div class="container">
+		 <div class="xd-banner-header visible-desktop">
+	        	 <{$xoops_banner}>
+	              </div>
+       		<div class="xd-logo">
+       			<img class="pull-left"  src="<{xoImgUrl img/xoops-logo.png}>" alt="">
+			<h1 class="xd-title"><{$xoops_sitename}></h1>
+			<p class="white" style="padding-left:50px"><{$xoops_slogan}></p>
+		</div>
+	</div>
+	<div class="xdnav_bottom">
+		<div class="container">
+			<ul class="xdnav_bottomul">
+				<li class="xd-sub-xdnav_bottom"><a href="#">link</a></li>
+				<li class="xd-sub-xdnav_bottom"><a href="#">link</a></li>
+				<li class="xd-sub-xdnav_bottom"><a href="#">link</a></li>
+			</ul>
+		</div>
+	</div>
+	</header>
+	<section id="xd-bk-content" class="xd-padt10">
+		<div class="container">
+			<div class="row">
+			<{includeq file="$theme_name/xd_theme_blockleft.html"}><!-- block left -->
+			<{includeq file="$theme_name/xd_theme_blockright.html"}><!-- block right -->
+			<{includeq file="$theme_name/xd_theme_centerZone.html"}><!-- blocks bottom top and content -->
+			</div>
+		</div>
+	</section>
+	
+	<footer>
+		<div class="container">
+			<div class="row">
+				<article class="span12">
+					<div class="row">
+					<div class="span5 xd-linear-footer"></div>
+						<article class="span2">
+							<ul class="xd-follow_icon">
+								<li class="sprite-facebook_dark"><a href="#"></a></li>
+								<li class="sprite-google_dark"><a href="#"></a></li>
+								<li class="sprite-twitter_dark"><a href="#"></a></li>
+							</ul>
+						</article>
+						<div class="span5 xd-linear-footer"></div>
+						<article class="span12 center">
+						<{$xoops_footer}> | Design by <a href="http://xoops-demo.com" title="Template for Xoops">Xoops Demo : Template for Xoops</a>
+						</article>
+					</div>
+				</article>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

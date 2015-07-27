@@ -1,0 +1,374 @@
+@import url(xosystpl.css);
+@import url(forms.css);
+@import url(blocks.css);
+@import url(content.css);
+@import url(xoopseditor.css);
+
+html {
+	background: transparent;
+}
+body {
+    
+    background-color: #A79F4F;
+    background-image: url(../img/body.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    color: #CCCCCC;
+    font-family: Helevetica,Arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ======= Body wrapper ======= */
+#xo-wrapper {}
+#xo-bgstatic {}
+#xo-canvas {
+    margin-top:-8px;
+    background-color:       transparent;
+    color:                  #000;
+}
+body.theme-dialog #xo-canvas {
+    margin:                 0 6px;
+}
+/*================= Content Zone ===================*/
+#xo-canvas-content {
+    background: #32301F;
+    color: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    width: 926px;
+}
+#xo-page {
+    padding-top:            10px;
+    width:                  100%; /* add by kris */
+}
+#xo-canvas-rightcolumn {
+    padding:                .5em;
+}
+#xo-content {
+    clear:                  both;
+    margin:                 0;
+    background-color:       inherit;
+    padding:                .5em;
+    color:                  #ccc;
+}
+
+#xo-content table td {
+    vertical-align:         top;
+}
+
+/* ============== header ================= */
+#xo-header {
+	background: transparent;
+	
+	}
+
+/* ---------- Banner ---------- */
+#header_right {
+	float: right;
+	width: 500px;
+	margin-right: 30px;
+}
+
+#social_box {
+	float: right;
+	display: inline-block;
+	margin: 20px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+#social_box li {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#social_box li a {
+	width: 46px;
+	height: 46px;
+	margin-right: 5px;
+}
+
+
+
+
+
+#xo-banner {
+   background: url(../img/header-bg_big.png) repeat-y scroll 0 0 transparent;
+    height: 90px;
+    margin: 0 10px;
+    width: 950px;
+}
+
+#xo-banner h2{
+    margin-top: 5px;
+    padding-left: 15px;
+    position: absolute;
+   
+}
+
+#xo-banner.commercial {
+   background: url(../img/header-bg_big.png) repeat-y scroll 0 0 transparent;
+    height: 90px;
+    margin: 0 10px;
+    width: 950px;
+}
+
+/*body.theme-dialog #xo-banner {
+    height:                 48px;
+    padding-top:            6px;
+    padding-left:           10px;
+}*/
+
+#xo-banner-ad {
+    background: url("../img/bg-ad-top.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 72px;
+    padding: 6px;
+    position: relative;
+    top: 7px;
+    width: 480px;
+}
+
+#xo-banner-ad object, #xo-banner-ad img {
+    display:                block;
+}
+
+/*---------------------- Site name in header ----------------------------*/
+#xo-site-title {}
+a#xo-site-title {}
+a:hover#xo-site-title {}
+#xo-site-title.commercial {}
+#xo-site-title .commercial a:hover {}
+/*----------------------- slogan in header ------------------------*/
+#xo-site-slogan {}
+#xo-site-slogan.commercial {}
+/*------------------------ logo ----------------------------*/
+#xo-main-logo {
+ 	
+	}
+
+#xo-main-logo.commercial {}
+/*-------- Bannder-----------*/
+#xo-banner form {}
+#xo-banner input {}
+/*============== Styles in userbar.html =================*/
+#xo-userbar {
+    bottom: 1px;
+    color: #FFFFFF;
+    position: relative;
+    right: 17px;
+    text-align: center;
+}
+#xo-userbar form {
+    display:                inline;
+    padding:                0;
+}
+#xo-userbar button {
+    margin:                 0;
+    margin-bottom:          -2px;
+    background:             transparent none;
+    padding:                0;
+    color:                  #7BADEA;
+    border:                 0 none transparent;
+}
+#xo-userbar button img {
+    width:                  22px;
+    height:                 22px;
+}
+#xo-userbar button:hover {
+     border:                0 !important;
+ }
+#xo-userbar img {
+    width:                  26px;
+    height:                 26px;
+}
+#xo-userbar a {
+    color:                  #1251c6;
+    background-color:       inherit;
+    text-decoration:        none;
+}
+#xo-userbar a:hover {
+    color:                  #000;
+    background-color:       inherit;
+}
+#xo-uname {
+    font-weight:            bold;
+    font-size:              1.1em;
+}
+/*============= Style in globalnav.html ================*/
+#xo-globalnav {
+   
+    background:            url(../img/navbar-bg.png) no-repeat scroll 0 0 transparent;
+
+    clear: both;
+    height: 72px;
+    width: 970px;
+}
+* html #xo-globalnav {
+    height:                 28px;
+}
+
+#xo-globalnav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#xo-globalnav li {
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+	background: url(../img/menu_divider.png) right top no-repeat;
+}
+
+#xo-globalnav ul li a {
+	float: left;
+	display: block;
+	height: 46px;
+	width: 120px;
+	padding-top: 14px;
+	font-size: 14px;
+	color: #000000;	
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	outline: none;
+	border: none;
+}
+
+#xo-globalnav ul li a:hover,  #xo-globalnav ul li .current {
+	color: #FFFFFF;
+	background: url(../img/menu_hover.png) center bottom no-repeat;
+}
+
+#xo-globalnav ul .last {
+	background: none;
+}
+
+/* ===== Footer ===== */
+#xo-footer {
+    margin:                 0;
+    background-color:       #C6C7C9;
+    padding:                .5em;
+    color:                  #666;
+    font-size:              .9em;
+    text-align:             center;
+}
+
+body.theme-dialog #xo-footer {
+    padding:                .2em .5em;
+    font-size:              .8em;
+}
+#xo-footer a {
+    background-color:       inherit;
+    color:                  #333;
+}
+
+#xo-footer a:hover {
+    background-color:       inherit;
+    color:                  #fff;
+    text-decoration:        underline;
+}
+
+#templatemo_footer h4{
+	    color: #FFFFFF;
+    font-size: 18px;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+#templatemo_footer {
+	width: 890px;
+	margin: 0 10px;
+	padding: 30px;
+	background: #0d869c url(../img/footer.png) top repeat-x;
+	height: 190px;
+}
+
+#templatemo_footer .footer_box {
+	float: left;
+	width: 260px;
+	padding-right: 45px;
+}
+
+#templatemo_footer ul { padding: 0; margin: 0; list-style: none; }
+
+#templatemo_footer li { padding: 0; margin: 0 0 5px 0; }
+
+#templatemo_footer li a {
+	display: block;
+	color: #ccc;
+	text-decoration: none;
+	 border-bottom: 1px dotted #fff;
+}
+
+#templatemo_footer li a:hover {
+	color: #fff;
+}
+
+#templatemo_footer .last {
+	padding-right: 0;
+}
+
+
+#templatemo_copyright {
+	width: 890px;
+	margin: 0 10px;
+	padding: 10px 30px;
+	text-align: center;
+	background: #0c4650 url(../img/copyright.png) top repeat-x;
+	color: #ccc;
+}
+
+/*========== xo_footerstatic.html ==========*/
+#xo-footerstatic * { margin: 0; padding: 0;}
+#xo-footerstatic {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background: none;
+  color: #000;
+  font-size: 11px;
+}
+body>#xo-footerstatic {  position: fixed;}
+#xo-footerstatic #controls {
+  margin: 0 20px 0 20px;
+  background-color: #fff;
+  line-height: 39px;
+  text-shadow:	2px 2px 3px #aaa;
+  border: 1px solid #b5b5b5;
+  border-bottom: none;
+}
+#xo-footerstatic #controls  { margin-top: 1px; background: #E7F4F7; padding: 3px 10px 0 10px;}
+#xo-footerstatic .separate { margin-left: 3px; border-left: 1px solid #b5b5b5;}
+#xo-footerstatic #controls ul, li { margin: 0;  padding: 0;}
+#xo-footerstatic #controls ul { list-style: none;}
+#xo-footerstatic #controls li { display: inline-block; height: 29px; line-height: 27px; padding-right: 6px;}
+#xo-footerstatic .icon { vertical-align: text-bottom;}
+#xo-footerstatic .icon-chat { padding-top: 3px;}
+#xo-footerstatic .chat, .icon-chat { float: right;}
+#xo-footerstatic .text { vertical-align: top;}
+
+/* ===== debug messages ===== */
+#xo-logger-output {
+    font-size:              .8em;
+	margin-bottom:			35px;
+}
+#xo-logger-tabs a:hover {background-color: transparent; color: #fff;}
+table #xo-logger-queries tr {width: 100%;)
+.outer {border: 1px solid silver;}
+.head {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+.even {background-color: #dee3e7; padding: 5px;}
+.odd {background-color: #E9E9E9; padding: 5px;}
+.foot {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #dee3e7; padding: 5px;}
+tr.odd td {background-color: #E9E9E9; padding: 5px;}

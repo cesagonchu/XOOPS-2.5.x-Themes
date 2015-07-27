@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>" dir="rtl">
+<head>
+<!-- Theme name -->
+	<{assign var=theme_name value=$xoTheme->folderName}>
+<!-- Directory html files -->
+	<{assign var=theme_name value=$xoTheme->folderName|cat:'/xotpl'}>
+<!-- Title and meta -->
+	<title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> : <{/if}><{$xoops_sitename}></title>
+	<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />	
+	<meta name="robots" content="<{$xoops_meta_robots}>" />
+  <meta name="keywords" content="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}>, <{/if}><{$xoops_meta_keywords}>" />
+	<meta name="description" content="<{if $xoops_pagetitle !=''}><{$xoops_pagetitle}>, <{/if}><{$xoops_meta_description}>" />
+	<meta name="rating" content="<{$xoops_meta_rating}>" />
+	<meta name="author" content="<{$xoops_meta_author}>" />
+	<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+	<meta name="generator" content="Microsoft FrontPage 6.0" />
+	
+<!-- Rss -->
+<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="<{xoAppUrl backend.php}>" />
+
+<!-- Favicon -->
+	<link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+	<link rel="icon" type="image/png" href="<{xoImgUrl icons/icon.png}>" />
+	
+<!-- Sheet Css -->
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+	<link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl css/style.css}>" />
+	
+	<{$xoops_module_header}>
+	<script language="javascript" type="text/javascript">
+function clearText(field)
+{
+    if (field.defaultValue == field.value) field.value = '';
+    else if (field.value == '') field.value = field.defaultValue;
+}
+</script>
+
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+<noscript><h1><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}><{/if}></h1></noscript>
+
+<div id="templatemo_wrapper">
+
+    <div id="templatemo_header">
+    
+        <div id="site_title">
+            <h1><a href="http://www.templatemo.com" target="_parent">Free CSS Template</a></h1>
+        </div> <!-- end of site_title -->
+        
+        <div id="search_box">
+            <form action="#" method="get">
+                <input type="text" value="Type a keyword &amp; hit enter" name="q" size="10" 
+                id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
+            </form>
+        </div>
+        
+    </div>
+    
+  <div id="templatemo_menu">
+  
+    <ul>
+          <li><a href="#" class="current">Home</a></li>
+          <li><a href="http://www.templatemo.com/page/1" target="_parent">Web Templates</a></li>
+          <li><a href="http://www.flashmo.com/page/1" target="_parent">Flash Galleries</a></li>
+          <li><a href="#">Company</a></li>
+    </ul>   
+     	
+        <div id="login">
+            <a href="#">Login</a> or <a href="#">Register</a>
+        </div>
+        
+        <div class="cleaner"></div>
+        
+    </div> <!-- end of templatemo_menu -->
+    
+    <div id="templatemo_middle">
+    
+    	
+        
+        <div id="m_right">
+	        <h1>Free Website Templates</h1>
+            <p>This is a <a href="http://www.templatemo.com/page/1" target="_parent">multi-color template</a> one page layout provided by <a href="http://www.templatemo.com" target="_parent">templatemo.com</a> for free of charge. There are <a href="http://www.templatemo.com/page/2" target="_parent">2 background graphics</a> provided in the &quot;images&quot; folder. You may choose the one you like. Enjoy!</p>
+          	<a href="#" class="float_r">Details</a>
+		</div>
+    <div id="middle_img"><img class="middle_img" src="<{xoImgUrl images/templatemo_image_03.jpg}>" alt="image" /><span></span></div>
+    </div>
+    
+    <div id="templatemo_content">
+    	
+
+    
+<div id="xo-canvas">  
+  <!-- End header -->
+  <table dir="rtl" dir="rtl" id="xo-canvas-content" cellspacing="0">
+	
+    	<tr>
+        	<td>
+            <table dir="rtl" dir="rtl">
+            	 <{if $xoops_showrblock}>
+                <tr>
+                	<td colspan="2" id="slogan-header">
+                    
+                    </td>
+                </tr>
+                <{/if}>
+                <tr>
+                	<!-- Start left blocks loop -->
+		  <{if $xoops_showlblock}>
+					<td id="xo-canvas-leftcolumn">
+					<{foreach item=block from=$xoBlocks.canvas_left}>
+					<{includeq file="$theme_name/theme_blockleft.html"}>
+					<{/foreach}>         
+					 </td>
+		 <{/if}>
+		<!-- End left blocks loop -->
+                    <td id="xo-page">
+		<!-- Start center top blocks loop -->
+		<{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+		<table dir="rtl" dir="rtl"  id="xo-topblocks" cellspacing="0">
+			<tr>
+					<td id="xo-topcenterblocks" colspan="2">
+					<{foreach item=block from=$xoBlocks.page_topcenter}>
+					<{includeq file="$theme_name/theme_blockcenter_c.html"}>
+					<{/foreach}>
+					</td>
+			</tr>
+			<tr>
+					<td id="xo-topleftblocks">
+					<{foreach item=block from=$xoBlocks.page_topleft}>
+					<{includeq file="$theme_name/theme_blockcenter_l.html"}>
+					<{/foreach}>
+					</td>
+					
+					<td id="xo-toprightblocks">
+					<{foreach item=block from=$xoBlocks.page_topright}>
+					<{includeq file="$theme_name/theme_blockcenter_r.html"}>
+					<{/foreach}>
+					</td>
+			</tr>
+		</table>
+		<{/if}>
+		<!-- End center top blocks loop -->
+		
+		<!-- Start content module page -->
+        <div id="xo-content"><{$xoops_contents}></div>
+		<!-- End content module -->
+	
+	    <!-- Start center bottom blocks loop -->
+        <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+		<table dir="rtl" dir="rtl" id="xo-bottomblocks" cellspacing="0">
+		<{if $xoBlocks.page_bottomcenter}>
+		<tr>
+				<td id="xo-bottomcenterblocks" colspan="2">
+				<{foreach from=$xoBlocks.page_bottomcenter item=block}>
+				<{include file="$theme_name/theme_blockcenter_c.html"}><{/foreach}>
+				</td>
+		</tr>
+		<{/if}>
+		<{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+		<tr>
+				<td id="xo-bottomleftblocks">
+				<{foreach from=$xoBlocks.page_bottomleft item=block}>
+				<{include file="$theme_name/theme_blockcenter_l.html"}>
+				<{/foreach}>
+				</td>
+				
+				<td id="xo-bottomrightblocks">
+				<{foreach from=$xoBlocks.page_bottomright item=block}>
+				<{include file="$theme_name/theme_blockcenter_r.html"}>
+				<{/foreach}>
+				</td>
+		</tr>
+		<{/if}>
+		</table>
+		<{/if}>
+		<!-- End center bottom blocks loop -->
+      </td>
+                </tr>
+            </table>
+            </td>
+            
+        <{if $xoops_showrblock}>
+		<td id="xo-canvas-rightcolumn">
+        <{foreach item=block from=$xoBlocks.canvas_right}>
+          <{includeq file="$theme_name/theme_blockright.html"}>
+        <{/foreach}>
+		</td>
+		<{/if}>
+        </tr>
+           
+    
+  </table>
+  <!-- Start footer -->
+  <!-- end Footer -->
+</div>
+
+		<!-- end of templatemo_footer -->
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+
+<{if $blocks}>
+    <<{$zoneTag}> class="xo-blockszone x2-secondary<{if $zoneClass}> <{$zoneClass}><{/if}>"<{if $zoneId}> id="<{$zoneId}>"<{/if}>>
+    <div id="sidebar_top"></div>
+        <{foreach from=$blocks item=block}>
+        
+            <div class="xo-block <{$block.module}>">
+            	
+                <{if $block.title}><div class="xo-blocktitle"><{$block.title}></div><{/if}>
+                <div class="xo-blockcontent"><{$block.content}></div>
+            </div>
+        <{/foreach}>
+        <div id="sidebar_bottom"></div>
+    </<{$zoneTag}>>
+<{/if}>

@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+    <!-- Assign Theme name -->
+    <{assign var=theme_name value=$xoTheme->folderName}>
+
+    <!-- Title and meta -->
+    <meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+    <meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+    <title><{if $xoops_pagetitle !=''}><{$xoops_pagetitle}> - <{/if}><{$xoops_sitename}></title>
+    <meta name="robots" content="<{$xoops_meta_robots}>" />
+    <meta name="keywords" content="<{$xoops_meta_keywords}>" />
+    <meta name="description" content="<{$xoops_meta_description}>" />
+    <meta name="rating" content="<{$xoops_meta_rating}>" />
+    <meta name="author" content="<{$xoops_meta_author}>" />
+    <meta name="copyright" content="<{$xoops_meta_copyright}>" />
+    <meta name="generator" content="XOOPS" />
+    
+        <script type="text/javascript" src="<{xoImgUrl js/jquery-1.4.3.min.js}>"></script>
+    <script type="text/javascript" src="<{xoImgUrl js/jquery.nivo.slider.pack.js}>"></script>
+        <script type="text/javascript">
+    $(window).load(function() {
+        $('#slider').nivoSlider();
+    });
+    </script>
+
+    <!-- Rss -->
+    <link rel="alternate" type="application/rss+xml" title="" href="<{xoAppUrl backend.php}>" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/ico" href="<{xoImgUrl icons/favicon.ico}>" />
+    <link rel="icon" type="image/png" href="<{xoImgUrl icons/favicon.png}>" />
+
+    <!-- Sheet Css -->
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoAppUrl xoops.css}>" />
+    <link rel="stylesheet" type="text/css" media="all" title="Style sheet" href="<{xoImgUrl style.css}>" />
+	<!--[if lte IE 8]>
+		<link rel="stylesheet" href="<{xoImgUrl styleIE8.css}>" type="text/css" />
+	<![endif]-->
+
+    <!-- customized header contents -->
+    <{$xoops_module_header}>
+
+    
+</head>
+<body id="<{$xoops_dirname}>" class="<{$xoops_langcode}>">
+<div id="wrap">
+	<div id="header">
+		<div id="sitename"><{$xoops_banner}><a href="<{$xoops_url}>">XDRs18</a><span id="description"><{$xoops_slogan}></span></div>
+
+<!-- debut barre de navigation -->
+			<div id="templatemo_menu">
+				<ul>
+					<{php}>
+					    include_once XOOPS_ROOT_PATH.'/modules/system/blocks/system_blocks.php';
+					    $modules = b_system_main_show();
+					    $this->assign('defModules', $modules);
+					<{/php}>
+					
+					<li><a href="<{$xoops_url}>" <{if $xoops_dirname == "system"}> class="active"<{/if}>><span>Accueil</span></a></li>
+					<{foreach item=module from=$defModules.modules}>
+					<li><a href="<{$xoops_url}>/modules/<{$module.directory}>/" <{if $xoops_dirname== $module.directory}> class="active"<{/if}> title="<{$module.name}>"><span><{$module.name}></span></a>
+					<{/foreach}>
+				</ul>
+
+			</div>
+<!-- fin barre de navigation -->
+
+
+<!-- debut colonnes -->
+
+			<div id="headercolumn1">
+				<p class="description">
+					We design, develop and promote beautiful &amp; accessible websites and web apps.
+					Checkout our <a href="portfolio">portfolio</a> or learn more about our <a href="/#">products</a> &amp; <a href="#">services</a>
+				</p>
+			</div>
+
+	<div id="headercolumn2">
+		<div id="search_top">
+			<form action="<{xoAppUrl search.php}>" method="get">
+				<p><input type="text" name="query" id="query" class="keyword"/>	</p>
+				<p class="button"><input name="" type="image" src="<{xoImgUrl images/searchbutton.gif}>" alt="Search" /></p>
+				<p class="hide"><input type="hidden" name="search" value="1" /></p>
+			</form>
+		</div>
+		<div id="subscribe"><a href="<{xoAppUrl register.php}>">Subscribe</a></div>
+	</div>
+  </div>
+
+<!-- fin colonnes -->
+
+	<div id="contents">
+<!-- debut top bar -->
+	 	<div id="topbar">
+			<div class="columns">
+			<h2>First Title</h2>
+			<p>Ut ante dolor, eleifend viverra, adipiscing elementum, interdum sit  amet, felis. Donec euismod, felis non auctor tempus, ante metus  sollicitudin ante</p>
+		</div>
+		
+			<div class="columns">
+			<h2>Second Title</h2>
+			<p>Ut ante dolor, eleifend viverra, adipiscing elementum, interdum sit  amet, felis. Donec euismod, felis non auctor tempus, ante metus  sollicitudin ante</p>
+			</div>
+
+			<div class="columns">
+			<h2>Third Title</h2>
+			<p>Ut ante dolor, eleifend viverra, adipiscing elementum, interdum sit  amet, felis. Donec euismod, felis non auctor tempus, ante metus  sollicitudin</p>
+			</div>
+<!-- fin top bar -->			
+			
+	</div>
+
+
+<!-- debut slider -->
+	<div id="homepage">
+		<div class="services">
+			<h2 class="subhead">What we do ?</h2>
+				<ul>
+				<li class="idea"><a href="#">Ut ante dolor, eleifend viverra, adipiscing elementum, interdum sit  amet, felis.</a></li>
+				<li class="design"><a href="#">Ut ante dolor, eleifend viverra, adipiscing elementum, interdum sit  amet, felis.</a></li>
+				<li class="apps"><a href="#">Ut ante dolor, eleifend viverra, adipiscing elementum, interdum sit  amet, felis.</a></li>
+				<li class="mobile"><a href="#">Ut ante dolor, eleifend viverra, adipiscing elementum, interdum sit  amet, felis.</a></li>
+				</ul>
+		</div>
+	<div class="portfolio_preview">
+	<h2><img width="130" height="18" alt="From Portfolio" src="<{xoImgUrl images/fromportfolio.gif}>"></h2>
+		<div id="from_portfolio">
+			<div id="slider-wrapper">
+		        <div id="slider" class="nivoSlider">
+		           <img src="<{xoImgUrl images/kre8ivity.png}>" alt="" />
+		           <img src="<{xoImgUrl images/ramblingsoul.png}>" alt=""  />
+		           <img src="<{xoImgUrl images/real2.png}>" alt="" />   
+		        </div>
+            </div>
+	    </div>
+    </div>
+<!-- fin slider -->
+
+<table cellspacing="0">
+    <tr>
+
+
+        <td id="centercolumn">
+            <!-- Display center blocks if any -->
+            <{if $xoBlocks.page_topleft or $xoBlocks.page_topcenter or $xoBlocks.page_topright}>
+                <table cellspacing="0">
+                    <tr>
+                        <td id="centerCcolumn" colspan="2">
+                        <!-- Start center-center blocks loop -->
+                        <{foreach item=block from=$xoBlocks.page_topcenter}>
+                            <{includeq file="$theme_name/theme_blockcenter_c.html"}>
+                        <{/foreach}>
+                        <!-- End center-center blocks loop -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="centerLcolumn">
+                        <!-- Start center-left blocks loop -->
+                        <{foreach item=block from=$xoBlocks.page_topleft}>
+                            <{includeq file="$theme_name/theme_blockcenter_l.html"}>
+                        <{/foreach}>
+                        <!-- End center-left blocks loop -->
+                        </td>
+                        <td id="centerRcolumn">
+                        <!-- Start center-right blocks loop -->
+                        <{foreach item=block from=$xoBlocks.page_topright}>
+                            <{includeq file="$theme_name/theme_blockcenter_r.html"}>
+                        <{/foreach}>
+                        <!-- End center-right blocks loop -->
+                        </td>
+                    </tr>
+                </table>
+            <{/if}>
+            <!-- End center top blocks loop -->
+
+            <!-- Start content module page -->
+            <{if $xoops_contents && ($xoops_contents != ' ') }><div id="content"><{$xoops_contents}></div><{/if}>
+            <!-- End content module -->
+
+            <!-- Start center bottom blocks loop -->
+            <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright or $xoBlocks.page_bottomcenter}>
+                <table cellspacing="0">
+                    <{if $xoBlocks.page_bottomcenter}>
+                        <tr>
+                            <td id="bottomCcolumn" colspan="2">
+                            <{foreach from=$xoBlocks.page_bottomcenter item=block}>
+                                <{include file="$theme_name/theme_blockcenter_c.html"}>
+                            <{/foreach}>
+                            </td>
+                        </tr>
+                    <{/if}>
+
+                    <{if $xoBlocks.page_bottomleft or $xoBlocks.page_bottomright}>
+                        <tr>
+                            <td id="bottomLcolumn">
+                            <{foreach from=$xoBlocks.page_bottomleft item=block}>
+                                <{include file="$theme_name/theme_blockcenter_l.html"}>
+                            <{/foreach}>
+                            </td>
+
+                            <td id="bottomRcolumn">
+                            <{foreach from=$xoBlocks.page_bottomright item=block}>
+                                <{include file="$theme_name/theme_blockcenter_r.html"}>
+                            <{/foreach}>
+                            </td>
+                        </tr>
+                    <{/if}>
+                </table>
+            <{/if}>
+            <!-- End center bottom blocks loop -->
+        </td>
+        
+        
+               <!-- Start left blocks loop -->
+        <{if $xoops_showlblock}>
+            <td id="leftcolumn">
+            <{foreach item=block from=$xoBlocks.canvas_left}>
+                <{includeq file="$theme_name/theme_blockleft.html"}>
+            <{/foreach}>
+            </td>
+        <{/if}>
+        <!-- End left blocks loop -->
+        
+
+        <!-- Start right blocks loop -->
+        <{if $xoops_showrblock}>
+            <td id="rightcolumn">
+            <{foreach item=block from=$xoBlocks.canvas_right}>
+                <{includeq file="$theme_name/theme_blockright.html"}>
+            <{/foreach}>
+            </td>
+        <{/if}>
+        <!-- End right blocks loop -->
+        
+         
+        
+    </tr>
+</table>
+
+<!-- debut bottom -->
+		<div id="bottom">
+			<div class="columns">
+				<h3>Chat with us</h3>
+				  <p>
+				  <strong><img src="<{xoImgUrl images/irc_protocol.png}>" alt="Gtalk" width="16" height="16" /> Gtalk :</strong> gtalk@gtalk.com
+				  </p>
+
+				  <p>
+				  <strong><img src="<{xoImgUrl images/yahoo_protocol.png}>" alt="Yahoo" width="16" height="16" /> Yahoo :</strong> yahoo@yahoo.com
+				  </p>
+				  
+				  <p>
+  				  <strong><img src="<{xoImgUrl images/msn_protocol.png}>" alt="MSN" width="16" height="16" /> MSN :</strong> msnmessenger
+  				  </p>
+  				  
+	   			  <p>
+	   			  <strong><img src="<{xoImgUrl images/skype.png}>" alt="Skype" width="16" height="16" /> Skype:</strong> skypeout
+	   			  </p>
+			</div>
+			
+				<div class="columns">
+				<h3>Contact Us</h3>
+				<p>
+				<img src="<{xoImgUrl images/telephone.png}>" alt="Call" width="16" height="16" /> Call : +91 9124563789
+				</p>  
+				
+				<p>
+				<img src="<{xoImgUrl images/mail_generic.png}>" alt="email" width="16" height="16" /> General Emails : email@server.com
+				</p>  
+				
+				<p>
+				<img src="<{xoImgUrl images/mail_generic.png}>" alt="email" width="16" height="16" />  Careers Related Enquiries : hr@server.com
+				</p>
+				
+				<p>
+				<img src="<{xoImgUrl images/mail_generic.png}>" alt="email" width="16" height="16" /> Partnership enquiries : Partners@server.com
+				</p>  
+		   </div>
+
+			<div class="columns">
+			<h3>Reach Us</h3>
+			<p>1st Floor</p>  
+			<p>ABCD Building, XYZ Street</p>  
+			<p>City of God, State</p>
+			<p>Country, Zip Code - 123456</p>  
+			</div>
+<!-- fin bottom -->
+
+	</div>
+<div id="midbottom"></div>
+</div>
+</div>
+
+
+		<div id="footer">
+			<div class="footercontent">
+				<p>Copyright Information Goes Here</p>
+					<p><a href="http://www.ramblingsoul.com" target="_blank"> CSS Template</a> by RamblingSoul | <{$xoops_footer}></p>
+			</div>
+	   </div>
+
+</div>
+</body>
+</html>

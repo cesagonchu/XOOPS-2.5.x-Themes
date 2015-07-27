@@ -1,0 +1,752 @@
+html, body {
+	background-color: #FFFFFF;
+    background-image: url(images/templatemo_body.jpg);
+    background-position: center top;
+    background-repeat: repeat-x;
+    color: #666666;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-size: 13px;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+	
+	}
+
+table {width: 100%;}
+table td {padding: 0; border-width: 0; vertical-align: top; }
+
+a {color: #666; text-decoration: none; font-weight: bold; background-color: transparent;}
+a:hover {color: #ff6600;}
+
+h1 {font-size:1.4em;}
+h2 {font-size:1.3em;}
+h3 {font-size:1.2em;}
+h4 {font-size:1.1em;}
+h5 {font-size:1em;}
+ul { margin: 2px; padding: 2px; list-style: disc inside; text-align: left;}
+ol { margin: 2px; padding: 2px; list-style: decimal inside; text-align: left;}
+li { margin-left: 2px; color: #2A75C5;}
+
+input.formButton {}
+
+.item {border: 1px solid #666;}
+.itemHead {padding: 3px; background-color: #cfcf80; color: #fff;}
+.itemInfo {text-align: right; padding: 3px; background-color: #efefef}
+.itemTitle a {font-size: 1.2em; font-weight: bold; font-variant: small-caps; color: #fff; background-color: transparent;}
+.itemPoster {font-size: .9em; font-style:italic;}
+.itemPostDate {font-size: .9em; font-style:italic;}
+.itemStats {font-size: .9em; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 1.3em; font-weight: bold;}
+.itemFoot {text-align: right; padding: 3px; background-color: #efefef;}
+.itemAdminLink {font-size: .9em;}
+.itemPermaLink {font-size: .9em;}
+
+/* ============== templatemo  ============*/
+
+.image_fr {
+    float: right;
+    margin: 3px 0 0 15px;
+}
+
+.float_l { float: left; }
+.float_r { float: right; }
+.button a {
+	display: block;
+	width: 82px;
+	height: 24px;
+	color: #666;
+	padding: 2px 0 0 18px;
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	background: url(images/templatemo_button.png) no-repeat;
+}
+
+.button a:hover {
+	color: #000;
+	background: url(images/templatemo_button_hover.png) no-repeat;
+}
+
+
+#templatemo_wrapper {
+	width: 970px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+#templatemo_header {
+	width: 910px;
+	padding: 15px 30px;
+}
+
+#templatemo_header  #site_title {
+	float: left;
+	margin: 10px 0 0 0;
+}
+
+#templatemo_header  #site_title h1 {
+	margin: 0;
+	padding: 0;
+}
+
+#templatemo_header  #site_title h1 a {
+	margin: 0px;
+	padding: 0px;
+	font-size: 40px;
+	color: #889b0b;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#templatemo_header  #site_title a span {
+	display: block;
+	text-align: right;
+	font-size: 16px;
+	color: #333;
+	font-weight: normal;
+	margin-left: 2px;
+	margin-top: 5px;
+}
+
+#social_box {
+	float: right;
+	display: inline-block;
+	margin: 10px 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+#social_box li {
+	display: block;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+
+#social_box li a {
+	width: 48px;
+	height: 48px;
+	margin-right: 5px;
+}
+
+/* menu */
+
+#templatemo_menu {
+	clear: both;
+	width: 910px;
+	padding: 0 30px;
+	height: 45px;
+	background: url(images/templatemo_menu.png) bottom center no-repeat;
+}
+
+#templatemo_menu ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#templatemo_menu li {
+	padding: 0px;
+	margin: 0px;
+	display: inline-block;
+}
+
+#templatemo_menu ul li a {
+	float: left;
+	display: block;
+	height: 30px;
+	width: 100px;
+	padding: 15px 5px 0 0;
+	font-size: 14px;
+	color: #666;	
+/*	text-shadow: 1px 1px 1px #fff; */
+	text-align: center;
+	text-decoration: none;
+	font-weight: bold;
+	outline: none;
+	border: none;
+}
+
+#templatemo_menu ul li a:hover,  #templatemo_menu ul li .current {
+	color: #333;
+/*	text-shadow: 1px 1px 1px #d2f6fc; */
+	background: url(images/templatemo_menu_hover.png) no-repeat top;
+}
+/* end of menu */
+
+/* banner */
+#templatemo_banner_wrapper {
+	clear: both;
+	width: 930px;
+	padding: 0 10px;
+	margin: 0 10px;
+	background: url(images/templatemo_content.png) repeat-y center;
+}
+
+#templatemo_banner {
+	width: 870px;
+	height: 210px;
+	padding: 30px;
+	background: url(images/templatemo_banner.png) no-repeat center top;
+}
+
+#templatemo_banner img {
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin-right: 50px;
+	border: 5px solid #bbf4fe;
+}
+
+#templatemo_banner h1 {
+	color: #000;
+	line-height: 38px;
+	font-weight: normal;
+	margin-bottom: 10px;
+/*	text-shadow: 1px 1px 1px #fff; */
+}
+
+#templatemo_banner p {
+	font-size: 22px;
+	line-height: 26px;
+	margin-bottom: 20px;
+}
+/* end of banner */
+
+#templatemo_service_bar_wrapper {
+	clear: both;
+	width: 930px;
+	padding: 10px;
+	margin: 0 10px;
+	background: url(images/templatemo_content.png) repeat-y center;
+}
+
+#templatemo_service_bar {
+	width: 890px;
+	height: 55px;
+	padding: 20px;
+	background: url(images/templatemo_sp_box.jpg) no-repeat;
+}
+
+#templatemo_service_bar .sb_box {
+	float: left;
+	width: 270px;
+	margin: 0 40px 0 0;
+}
+
+#templatemo_service_bar .sb_box_last {
+	margin-right: 0;
+}
+
+#templatemo_service_bar img {
+	float: left;
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
+}
+
+#templatemo_service_bar a {
+	line-height: 22px;
+	color: #fff;
+ 	font-weight: bold;
+	text-decoration: none;
+}
+
+#templatemo_service_bar a:hover {
+	text-decoration: none;
+}
+
+#templatemo_content_wrapper {
+	clear: both;
+	width: 930px;
+	padding: 0 10px;
+	margin: 0 10px;
+	background: url(images/templatemo_content.png) repeat-y center;
+}
+
+#templatemo_content {
+	width: 870px;
+	padding: 30px;
+}
+
+#templatemo_content p {
+	margin-bottom: 10px;
+}
+
+.col_260 {
+	float: left;
+	padding: 0 20px 0 0;
+	width: 240px;
+	margin-right: 45px;
+}
+
+.col_w565 {
+	float: left;
+	width: 565px;
+	margin-right: 40px;
+}
+
+.col_last {
+	margin-right: 0;
+}
+
+
+.sb_news_box {
+	margin-bottom: 20px;
+}
+
+.sb_news_box a {
+	color: #8a9e0c;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.sb_news_box a:hover { color: #0066FF; }
+
+.sb_news_box span {
+	color: #333;
+	font-weight: normal;
+}
+
+.service_box {
+	clear: both;
+	margin-bottom: 50px;
+}
+
+.service_box img {
+	float: left;
+	width: 48px;
+	height: 48px;
+}
+
+.service_box .sb_right {
+	float: right;
+	width: 500px;
+}
+
+#contact_form {
+	padding: 0;
+}
+
+#contact_form form {
+	margin: 0px;
+	padding: 0px;
+}
+
+#contact_form form .input_field {
+	width: 350px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+#contact_form form label {
+	display: block;
+	width: 100px;
+	margin: 10px 0px 5px 0px;
+	font-size: 14px;
+	color: #333;
+}
+
+#contact_form form textarea {
+	width: 350px;
+	height: 200px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid #ccc;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 12px;
+}
+
+#contact_form form .submit_btn {
+	background: #fff;
+	border: 1px solid #ccc;
+	margin: 0px;
+	padding: 7px 14px;
+}
+
+#contact_form form .reset {
+	margin-left: 100px;
+}
+
+#gallery {
+	clear: both;
+	margin-top: 30px;
+}
+
+#gallery ul { list-style: none; margin: 0; padding: 0; }
+
+	#gallery ul li {
+		float: left;
+		display: block; 
+		padding: 0;
+		margin: 0;
+		width: 260px;
+		margin: 0 40px 40px 0;
+	}
+	
+	#gallery ul .right_most {
+		margin: 0 0 35px 0;
+	}
+	
+	#gallery ul li h5 {
+		color: #8a9e0c;
+		margin-bottom: 15px;
+	}
+	 
+	#gallery ul img {
+		width: 250px;
+		height: 130px;
+		border: 5px solid #fff;
+		margin-bottom: 10px;
+	}
+
+#templatemo_footer_wrapper {
+	clear: both;
+	width: 100%;
+	background: #899d08;
+}
+
+#templatemo_footer {
+	
+	padding: 50px 40px 15px;
+	text-align: center;
+	color: #2d3400;
+	margin: 0 auto;
+	background: #899d08 url(images/templatemo_footer.png) top center no-repeat;
+}
+
+#templatemo_footer a {
+	color: #2d3400;
+}
+
+
+/* ============== templatemo  ============*/
+
+
+#header {
+    margin :                0;
+    padding :               0;
+    height:                 80px;
+    background:             #2A75C5 url(xo-banner_bg.png) repeat-x left top;
+    padding:                2px;
+    color:                  #fff;
+    border:                 1px solid #000;
+}
+#headerbanner {width: 100%; vertical-align: middle; text-align:center;}
+/* fix for banner */
+#xo-bannerfix {
+    /*position:               absolute;*/
+	position: relative;
+	float: right;
+    top:                    5px;
+    right:                  25px;
+    width:                  480px;
+    height:                 72px;
+    background:             url(bg-ad-top.png) no-repeat;
+	padding:				6px;
+	z-index:99;
+}
+#xo-bannerfix object, #xo-bannerfix img {display: block;}
+/* end fix for banner */
+#headerlogo img {padding: 0;}
+#headerbar {border-bottom: 1px solid #ddd; background-image: url(hbar.gif);}
+
+#leftcolumn {width: 240px;  font-size:1em;}
+#leftcolumn th {background-color: #2A75C5; color: #fff; vertical-align: middle;}
+#leftcolumn .blockTitle {
+	font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 30px;
+    padding: 0;}
+#leftcolumn .blockContent {padding: 3px; line-height: 1.2em;}
+
+
+#centercolumn {font-size: 1em; padding: 0 0 0 1px;}
+#centercolumn th {background-color: #ececc7; color: #666; vertical-align: middle;}
+
+#centerCcolumn, #bottomCcolumn {padding: 0 3px 1px 3px;}
+#centerCcolumn .blockTitle, #bottomCcolumn .blockTitle {
+	    font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 30px;
+    padding: 0;
+	}
+#centerCcolumn .blockContent, #bottomCcolumn .blockContent {padding: 3px; margin-right: 0;  margin-left: 0; margin-bottom: 2px; line-height: 1.2em;}
+
+#centerLcolumn, #bottomLcolumn, #centerRcolumn, #bottomRcolumn {
+        width: 50%; padding: 0 3px 0 0;
+}
+#centerLcolumn .blockTitle, #bottomLcolumn .blockTitle, #centerRcolumn .blockTitle, #bottomRcolumn .blockTitle {
+            font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 30px;
+    padding: 0;
+}
+#centerLcolumn .blockContent, #centerRcolumn .blockContent, #bottomLcolumn .blockContent, #bottomRcolumn .blockContent {
+         padding: 3px; margin-left: 2px; margin-right: 3px; margin-bottom: 2px; line-height: 1.2em;
+}
+
+#content {text-align: left; padding: 8px;}
+
+#rightcolumn {width: 240px;  font-size:1em;}
+#rightcolumn th {background-color: #2A75C5; color: #fff; vertical-align: middle;}
+#rightcolumn .blockTitle {
+	font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 30px;
+    padding: 0;
+	}
+#rightcolumn .blockContent {padding: 3px; line-height: 1.2em;}
+
+#footerbar { background-image: url(hbar.gif); font-size:.9em; height : 23px;}
+#footerbar td { vertical-align : middle; text-align:center;}
+
+#mainmenu a {background-color: transparent; display: block; margin: 0; padding: 4px;}
+#mainmenu a:hover {background-color: #fff;}
+#mainmenu a.menuTop {padding-left: 3px;}
+#mainmenu a.menuMain {padding-left: 3px; }
+#mainmenu a.menuSub {padding-left: 9px; }
+#mainmenu a.maincurrent {background-color:transparent; color:#8A9E0C;}
+
+#usermenu { font-size : .9em;}
+#usermenu a {background-color: transparent; display: block; margin: 0; padding: 2px;  font-weight : normal;}
+#usermenu a:hover {background-color: #fff;}
+#usermenu a.menuTop {}
+#usermenu a.highlight {background-color: #fcc;}
+
+
+caption {font-weight: bold;}
+th, thead {background-color: #2A75C5; padding : 2px; color: #fff; vertical-align : middle;}
+.outer {border: 1px solid #ececc7;}
+.head {background-color: #cfcf9d; padding: 5px; font-weight: bold;}
+.even {background-color: #b1b185; padding: 5px;}
+.odd {background-color: #E9E9E9; padding: 5px;}
+.foot {background-color: #c2cdd6; padding: 5px; font-weight: bold;}
+tr.even td {background-color: #CFCF9D; padding: 5px;}
+tr.odd td {background-color: #E9E9E9; padding: 5px;}
+tr.foot td {background-color: #cfcf80; padding: 5px; color:inherit; font-weight: bold;}
+
+.errorMsg,.confirmMsg, .resultMsg  { padding: .8em; text-align:center; margin-bottom: 1em; border: 2px solid #ddd;}
+.errorMsg  { background-color: #FBE3E4; color: #D12F19; border-color: #FBC2C4; }
+.confirmMsg { background-color: #FFF6BF; color: #817134; border-color: #FFD324; }
+.resultMsg { background-color: #E6EFC2; color: #529214; border-color: #C6D880; }
+.errorMsg a { background-color: transparent; color: #D12F19; }
+.confirmMsg a { background-color: transparent; color: #817134; }
+.successMsg a { background-color: transparent; color: #529214; }
+
+.xoopsCode { 
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #000080 #000080 #000080 #CFCF80;
+    border-style: inset inset inset solid;
+    border-width: 1px 1px 1px 6px;
+    font-family: "Courier New",Courier,monospace;
+    font-size: 0.9em;
+    height: 200px;
+    overflow: auto;
+    padding: 0 6px 6px;
+}
+.xoopsQuote { background: #fff; border: 1px inset #000080; font-family: "Courier New",Courier,monospace; padding: 0 6px 6px 6px; font-size:.9em;}
+blockquote {font-style : italic; line-height:1.4em;}
+
+.comTitle {font-weight: bold; margin-bottom: 2px;}
+.comText {padding: 2px;}
+.comUserStat {font-size: .9em; color: #2A75C5; font-weight:bold; border: 1px solid #c0c0c0; background-color: #fff; margin: 2px; padding: 2px;}
+.comUserStatCaption {font-weight: normal;}
+.comUserStatus {margin-left: 2px; margin-top: 10px; color: #2A75C5; font-weight:bold; font-size: .9em;}
+.comUserRank {margin: 2px;}
+.comUserRankText {font-size: .9em;font-weight:bold;}
+.comUserRankImg {border: 0;}
+.comUserName a {color: #fff;}
+.comUserImg {margin: 2px;}
+.comDate {font-weight: normal; font-style: italic; font-size: .8em;}
+.comDateCaption {font-weight: bold; font-style: normal;}
+
+/*============== Styles for system_siteclosed.html  (override system module) =================*/
+#xo-siteclose {
+    width:                  400px;
+    margin:                 100px auto;
+    background-color:       #e2e2e2;
+    padding:                30px;
+    color:                  #000;
+    font-size:              1.2em;
+    font-weight:            bold;
+    text-align:             center;
+    border:                 1px solid #666;
+}
+#xo-userbar_siteclosed {
+    display:                block;
+    background:             #2A75C5 url(xo-banner_bg.png) repeat-x left top;
+    padding-top:            8px;
+    padding-right:          1em;
+    color:                  #fff;
+    font-size :             .8em;
+    text-align :            center;
+}
+#xo-userbar_siteclosed form {
+    display:                inline;
+    padding:                0;
+}
+
+#xo-userbar_siteclosed input, #xo-userbar_siteclosed button {
+    width:                  100px;
+    background-color:       transparent;
+    color:                  #fff;
+    font-size :             .9em;
+    margin:                 2px;
+}
+#xo-userbar_siteclosed input:hover {}
+
+
+
+#login-box {
+	width:333px;
+	height: 352px;
+	padding: 58px 76px 0 76px;
+	color: #ebebeb;
+	font: 12px Arial, Helvetica, sans-serif;
+	background: url(images/login-box-backg.png) no-repeat left top;
+}
+
+#login-box img {
+	border:none;
+}
+
+#login-box h2 {
+	padding:0;
+	margin:0;
+	color: #ebebeb;
+	font: bold 44px "Calibri", Arial;
+}
+
+
+#login-box-name {
+	float: left;
+	display:inline;
+	width:80px;
+	text-align: right;
+	padding: 14px 10px 0 0;
+	margin:0 0 7px 0;
+	color: #000;
+}
+
+#login-box-field {
+	float: left;
+	display:inline;
+	width:230px;
+	margin:0;
+	margin:0 0 7px 0;
+}
+
+
+.form-login  {
+	width: 205px;
+	padding: 10px 4px 6px 3px;
+	border: 1px solid #0d2c52;
+	background-color:#93b746;
+	font-size: 16px;
+	color: #ebebeb;
+}
+
+
+.login-box-options  {
+	clear:both;
+	padding-left:87px;
+	font-size: 11px;
+}
+
+.login-box-options a {
+	color: #ebebeb;
+	font-size: 11px;
+}
+
+#xd-closed input {
+    background: url("images/login-btn.png") no-repeat scroll 0 0 transparent;
+    border: 0 solid #000000;
+    height: 45px;
+    margin-left: 90px;
+    margin-top: 20px;
+    width: 106px;
+}
+
+#xd-login{
+
+	    margin-left: 300px;
+}
+
+/*============== Styles for system_redirect.html (override system module) =================*/
+#xo-redirect {
+    width:                  780px;
+    margin:                 50px auto;
+    padding:                1em;
+    font-weight:            bold;
+    text-align:             center;
+}
+#xo-redirect .notreload {
+    height:                 28px;
+    background-color:       inherit;
+    padding-top:            2px;
+    color:                  #000;
+}
+#xo-redirect .notreload a {
+    background-color:       inherit;
+    color:                  #ff0000;
+    font-weight:            bold;
+    text-decoration:        none;
+}
+#xo-redirect .message {
+    min-height:             60px;
+    background-color:       #f3f3f3;
+    padding:                1em;
+    color:                  #333;
+    font-size:              1.2em;
+    text-align:             center;
+    border:                 1px solid #666;
+}
+#xo-redirect .message img{
+    padding:                1em;
+}
+/*============== Styles for pagenav =================*/
+#xo-pagenav {
+    margin:                 7px 0;
+    text-align:             center;
+    font-size:              1.05em;
+}
+#xo-pagenav a {
+    text-decoration:        none;
+}
+#xo-pagenav a:hover {
+    color:                  #fff;
+    background-color:       #2A75C5;
+    border:                 1px solid #fff;
+}
+.xo-pagact {
+    margin:                 0;
+    padding:                .2em .5em;
+    color:                  #fff;
+    background-color:       #cfcf80;
+    border:                 1px solid #fff;
+}
+.xo-counterpage, .xo-pagarrow {
+    margin:                 0;
+    padding:                .2em .5em;
+    color:                  #000;
+    background-color:       #fff;
+    border:                 1px solid #000;
+}
+.xo-counterpage:hover {}
+.xo-pagarrow {
+    letter-spacing:         0.2em;
+}
+/*======= Tinymce background textarea ========*/
+body.mceContentBody {
+    margin:                 0;
+    padding:                0;
+    background-color:       #fff;
+    background-image:       none;
+    color:                  #000;
+}
